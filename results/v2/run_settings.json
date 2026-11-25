@@ -1,0 +1,11 @@
+{
+  "USE_UNET": true,
+  "USE_ISIC2019": true,
+  "EPOCHS": 18,
+  "trained": [
+    "tf_efficientnetv2_s.in21k_ft_in1k",
+    "tf_efficientnet_b4.ns_jft_in1k",
+    "convnext_small.fb_in22k_ft_in1k_384"
+  ],
+  "hours": 9.11
+}

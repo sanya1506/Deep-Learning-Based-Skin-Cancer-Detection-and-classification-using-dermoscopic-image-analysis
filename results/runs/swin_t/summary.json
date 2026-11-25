@@ -1,0 +1,13 @@
+{
+  "run": "swin_t",
+  "arch": "swin_t",
+  "seed": 42,
+  "imbalance": "sqrt",
+  "skin_aug": false,
+  "epochs_run": 17,
+  "best_val_f1": 0.7033735569750864,
+  "train_minutes": 15.1,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

@@ -1,0 +1,13 @@
+{
+  "run": "resnet50",
+  "arch": "resnet50",
+  "seed": 42,
+  "imbalance": "sqrt",
+  "skin_aug": false,
+  "epochs_run": 15,
+  "best_val_f1": 0.6843553965539378,
+  "train_minutes": 8.8,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

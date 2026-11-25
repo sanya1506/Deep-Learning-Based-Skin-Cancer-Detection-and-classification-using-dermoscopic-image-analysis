@@ -1,0 +1,32 @@
+[
+  {
+    "check": "no lesion in train and val",
+    "passed": true,
+    "detail": "0"
+  },
+  {
+    "check": "no lesion in train and test",
+    "passed": true,
+    "detail": "0"
+  },
+  {
+    "check": "no lesion in val and test",
+    "passed": true,
+    "detail": "0"
+  },
+  {
+    "check": "split covers all 10,015 images",
+    "passed": true,
+    "detail": "10015"
+  },
+  {
+    "check": "ensemble choice reproduced from validation",
+    "passed": true,
+    "detail": "weighted"
+  },
+  {
+    "check": "six HAM10000 models trained and evaluated on the full test split",
+    "passed": true,
+    "detail": "1502"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "run": "study_imb_inverse_s1",
+  "arch": "efficientnet_b0",
+  "seed": 1,
+  "imbalance": "inverse",
+  "skin_aug": false,
+  "epochs_run": 14,
+  "best_val_f1": 0.6387180963427269,
+  "train_minutes": 6.5,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

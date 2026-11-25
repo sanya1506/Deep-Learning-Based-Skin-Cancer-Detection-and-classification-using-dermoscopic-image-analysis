@@ -1,0 +1,9 @@
+{
+  "tag": "convnext_small_meta_isic",
+  "arch": "convnext_small.fb_in22k_ft_in1k_384",
+  "meta": true,
+  "isic2019": true,
+  "size": 384,
+  "best_epoch": 15,
+  "minutes": 168.6
+}

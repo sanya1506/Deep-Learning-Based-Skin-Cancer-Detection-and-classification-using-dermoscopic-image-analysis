@@ -1,0 +1,9 @@
+{
+  "model": "efficientnet_b0",
+  "epochs_run": 15,
+  "best_val_f1": 0.6975615302290115,
+  "train_minutes": 31.41346538066864,
+  "device": "mps",
+  "train_size": 6981,
+  "quick": false
+}

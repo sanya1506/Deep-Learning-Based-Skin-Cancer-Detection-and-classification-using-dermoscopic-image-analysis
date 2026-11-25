@@ -1,0 +1,4 @@
+# in addition to ../requirements.txt
+timm>=1.0
+segmentation-models-pytorch>=0.3.4
+scipy

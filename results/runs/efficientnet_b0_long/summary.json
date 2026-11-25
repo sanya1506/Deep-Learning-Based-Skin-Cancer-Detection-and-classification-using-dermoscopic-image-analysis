@@ -1,0 +1,13 @@
+{
+  "run": "efficientnet_b0_long",
+  "arch": "efficientnet_b0_long",
+  "seed": 42,
+  "imbalance": "sqrt",
+  "skin_aug": false,
+  "epochs_run": 16,
+  "best_val_f1": 0.6684089517101457,
+  "train_minutes": 7.7,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

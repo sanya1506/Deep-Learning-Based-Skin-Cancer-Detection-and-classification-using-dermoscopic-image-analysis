@@ -1,0 +1,25 @@
+{
+  "id": "sanya1506/notebook-part-c",
+  "title": "notebook part C",
+  "code_file": "notebook-part-c.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "hiro002/dermacon-in-dataset",
+    "kmader/skin-cancer-mnist-ham10000"
+  ],
+  "kernel_sources": [
+    "sanya1506/notebook-part-b",
+    "sanya1506/notebook-part-a"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

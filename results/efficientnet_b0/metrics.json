@@ -1,0 +1,106 @@
+{
+  "model": "efficientnet_b0",
+  "checkpoint": "efficientnet_b0.pth",
+  "best_epoch": 15,
+  "overall": {
+    "accuracy": 0.8195739014647138,
+    "balanced_accuracy": 0.7227507077470158,
+    "macro_precision": 0.7281858822357713,
+    "macro_recall_sensitivity": 0.7227507077470158,
+    "macro_specificity": 0.9587355132933076,
+    "macro_f1": 0.7206047249060173,
+    "weighted_f1": 0.8221413610367535,
+    "macro_roc_auc": 0.9278641979249576,
+    "n_test": 1502
+  },
+  "binary": {
+    "accuracy": 0.8761651131824234,
+    "precision": 0.6793103448275862,
+    "sensitivity": 0.6793103448275862,
+    "specificity": 0.9232673267326733,
+    "f1": 0.6793103448275862,
+    "roc_auc": 0.8854358711733243,
+    "confusion_matrix": [
+      [
+        1119,
+        93
+      ],
+      [
+        93,
+        197
+      ]
+    ]
+  },
+  "per_class": [
+    {
+      "class": "akiec",
+      "type": "Malignant",
+      "precision": 0.7714285714285715,
+      "recall_sensitivity": 0.5192307692307693,
+      "specificity": 0.9944827586206897,
+      "f1": 0.6206896551724138,
+      "roc_auc": 0.8616445623342175,
+      "support": 52
+    },
+    {
+      "class": "bcc",
+      "type": "Malignant",
+      "precision": 0.7375,
+      "recall_sensitivity": 0.8309859154929577,
+      "specificity": 0.9853249475890985,
+      "f1": 0.7814569536423841,
+      "roc_auc": 0.9697443922796035,
+      "support": 71
+    },
+    {
+      "class": "bkl",
+      "type": "Benign",
+      "precision": 0.5867346938775511,
+      "recall_sensitivity": 0.688622754491018,
+      "specificity": 0.9393258426966292,
+      "f1": 0.6336088154269972,
+      "roc_auc": 0.919123550651506,
+      "support": 167
+    },
+    {
+      "class": "df",
+      "type": "Benign",
+      "precision": 0.6363636363636364,
+      "recall_sensitivity": 0.7,
+      "specificity": 0.9946018893387314,
+      "f1": 0.6666666666666666,
+      "roc_auc": 0.9733468286099864,
+      "support": 20
+    },
+    {
+      "class": "mel",
+      "type": "Malignant",
+      "precision": 0.5371428571428571,
+      "recall_sensitivity": 0.562874251497006,
+      "specificity": 0.9393258426966292,
+      "f1": 0.5497076023391813,
+      "roc_auc": 0.8790822848684654,
+      "support": 167
+    },
+    {
+      "class": "nv",
+      "type": "Benign",
+      "precision": 0.9281314168377823,
+      "recall_sensitivity": 0.900398406374502,
+      "specificity": 0.8594377510040161,
+      "f1": 0.9140546006066734,
+      "roc_auc": 0.9376690027040433,
+      "support": 1004
+    },
+    {
+      "class": "vasc",
+      "type": "Benign",
+      "precision": 0.9,
+      "recall_sensitivity": 0.8571428571428571,
+      "specificity": 0.9986495611073599,
+      "f1": 0.8780487804878049,
+      "roc_auc": 0.9544387640268801,
+      "support": 21
+    }
+  ]
+}

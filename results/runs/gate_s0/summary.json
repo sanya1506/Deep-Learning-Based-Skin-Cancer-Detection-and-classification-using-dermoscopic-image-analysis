@@ -1,0 +1,13 @@
+{
+  "run": "gate_s0",
+  "arch": "efficientnet_b0",
+  "seed": 0,
+  "imbalance": "sqrt",
+  "skin_aug": false,
+  "epochs_run": 11,
+  "best_val_f1": 0.4383894140561193,
+  "train_minutes": 2.8,
+  "device": "cuda",
+  "n_train": 3815,
+  "smoke": false
+}

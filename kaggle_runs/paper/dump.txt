@@ -1,0 +1,255 @@
+P0 [paper title] How HAM10000-Trained Skin Cancer Classifiers Behave on Indian Skin: A Zero-Shot Audit on DermaCon-IN
+P1 [Author] 
+P2 [Author] 
+P3 [Author] Sanya Shrivastava
+Dept. of Computer Science and Engineering
+Alliance School of Advanced Computing, Alliance University
+Bengaluru, India
+ssanyaBTECH24@ced.alliance.edu.in
+P4 [Author] Sanghmitra Kushetty
+Dept. of Computer Science and Engineering
+Alliance School of Advanced Computing, Alliance University
+Bengaluru, India
+ksanghamitraBTECH24@ced.alliance.edu.inSubha Mondal
+Dept. of Computer Science and Engineering
+Alliance School of Advanced Computing, Alliance University
+Bengaluru, India
+msubhaBTECH24@ced.alliance.edu.in
+P5 [Author] Kusuma J (Supervisor)
+Dept. of Information Technology
+Alliance School of Advanced Computing, Alliance University
+Bengaluru, India
+[kusuma.j@alliance.edu.in]Diksha Baranwal
+Dept. of Computer Science and Engineering
+Alliance School of Advanced Computing, Alliance University
+Bengaluru, India
+bdikshaBTECH24@ced.alliance.edu.in
+P6 [Normal] 
+P7 [Keywords] Abstract—Skin cancer classifiers are mostly. Tested on dermoscopic images of fair skin. We asked what such models do with the skin conditions that Indian patients photograph. We trained six ImageNet backbones and a validation-weighted ensemble on HAM10000 achieving a test macro-F1 of 0.747 and then ran these models without any retraining on DermaCon-IN a set of 5,450 photographs taken from Indian skin belonging to 3,002 patients with the data split by patient. The ensemble flagged 11.0 % (95 % confidence interval 9.0–13.3 %) of 802 non-neoplastic test images as cancer. Hair disorders, acne and pigmentary disorders were among the groups that produced the alarms and the alarm rates were similar across Fitzpatrick skin types III–IV and V–VI. The ensemble detected 26.3 % of the 19 images. A two-stage pipeline, with a gate trained on main classes lowered the false-cancer rate to 5.6 % ± 3.6 % across three random seeds but the gate rejected most dermoscopic images and missed cancers could not be measured because the test split contained only five basal cell carcinomas. On HAM10000 adding skin-tone augmentation gave no improvement and cropping lesions increased macro-F1 while decreasing sensitivity for malignant lesions. Overall accuracy, on HAM10000 does not carry over to clinical photographs.
+P8 [Heading 1] Keywords—Skin lesion classification, Indian skin, DermaCon-IN, HAM10000, data shift, false positives, two-level classification, deep learning
+P9 [Heading 1] Introduction
+P10 [Body Text] Most public training data for automated skin cancer classification consist of images taken in clinics located in Europe, Australia and the United States . Darker skin is rare, in these collections . Models trained on photographs perform differently across skin types.
+P11 [Body Text] An Indian patient goes through two changes. Outside specialist clinics, skin images are usually photos rather than dermoscope images.. Tumors make up just a small portion of what gets photographed. In DermaCon-IN only 52, out of 5,450 images show neoplasms. Most of the images show infections, inflammatory conditions and pigmentary disorders. A seven-class HAM10000 model does not have a "not a tumour" output. It has to put a rash or a vitiligo patch into one of its tumour classes. Some of these will be cancer classes. Each such false alarm can mean worry and an unnecessary referral. 
+P12 [bullet list] This work began as a HAM10000 classifier that used an Grad-CAM explanations. A reviewer pointed out that HAM10000 classification is well studied and suggested that the work should focus on skin. We therefore turned to DermaCon-IN a released dataset of clinical images of Indian skin disorders to evaluate what our models can do on Indian skin. Our contributions are:
+P13 [bullet list] A zero-shot audit was conducted on six classifiers trained on HAM10000 along with their ensemble using the DermaCon-IN dataset with a patient-level split. The audit reports the false-cancer rate, for -tumour conditions broken down by disease group and skin tone including confidence intervals.
+P14 [bullet list] A two-stage pipeline where a gate trained on main classes decides if an image should go to the cancer model, including its advantages and its drawbacks.
+P15 [Body Text] Three separate studies were conducted on handling class imbalance augmenting skin tone cropping lesions testing robustness to image corruption and evaluating Grad-CAM faithfulness. Each decision was based on validation data.
+P16 [Heading 1] Related Work
+P17 [Heading 2] Dermoscopic classification
+P18 [Body Text] Deep networks achieved accuracy to dermatologists when tested on carefully selected clinical and dermoscopic images [7]. The HAM10000 dataset [1]. The ISIC challenges [2] have become the go-to benchmarks in this field. Recent studies on these datasets rely on transfer learning using CNNs custom CNNs with resampling techniques [11] multi-scale input processing [12] segmentation followed by classification [13] a two-step approach that first identifies benign or malignant cases before subtyping [14] ensemble models combining CNNs and transformers and single models that provide explanations along, with uncertainty estimates. These studies use datasets, different class sets and different data splits so their results cannot be compared with ours. Also none of them provides results, for Indian skin.
+P19 [Heading 2] Skin tone and dataset shift
+P20 [Heading 2] Adamson and Smith said that dermatology AI models trained mostly on skin might not work well on dark skin . Kinyanjui and colleagues looked at skin tone, in ISIC images. Noticed there were very few images of dark skin. Groh and team shared images that were labeled with Fitzpatrick types [18] and found that the accuracy of the models changed depending on the skin type.
+P21 [Heading 2] Indian skin data
+P22 [Heading 1] DermaCon-IN has images, from South India that are labeled with main classes, sub-classes and diagnoses. These images are also marked with Fitzpatrick and Monk skin tones. We did not find any evaluation of cancer classifiers trained on HAM10000 on this dataset. Unlike the two-stage design used by Ali et al. Our first stage determines if an image shows a tumor all.
+P23 [Heading 1] Datasets
+P24 [Heading 2] HAM10000
+P25 [Heading 2] HAM10000 contains 10,015 dermoscopic images of 7,470 lesions distributed among seven categories. Melanoma (mel) cell carcinoma (bcc) and actinic keratosis/intraepithelial carcinoma (akiec) are classified as malignant. I find the HAM10000 dataset interesting because it offers a separation between malignant and benign lesions. We split the dataset by lesion to avoid duplication allocating 70% to training 15% to validation and 15%, to testing with seed 42. This yields 6,981 training images, 1,532 validation images and 1,502 testing images. The test set includes 167 melanomas and 290 malignant images.
+P26 [Heading 2] DermaCon-IN
+P27 [Normal (Web)] DermaCon-IN has 5,450 photographs. These photographs come from 3,002 patients in South India. The images are labelled with 8 classes and 245 different diagnoses. The skin types observed are Fitzpatrick III, IV, V and VI. There are no images of type I or type II skin. The Fitzpatrick III images number 1,403. The Fitzpatrick IV images number 2,620. The Fitzpatrick V images number 1,285. The Fitzpatrick VI images number 136. Access to DermaCon-IN is for research only. No patient image is shown in this paper.
+P28 [Normal (Web)] We split the data by patient. The split is stratified by each patients main class. Patients who have a label in their own stratum include 3,829, 801 and 820 images. A first split without that stratum left no image in the test set. We changed it before running any model. 19 Images, from 13 patients carry a malignant or possibly malignant label. The test split holds 5 of those images. All of those five images are cell carcinomas.
+P29 [Body Text] We consider an image non-neoplastic if its main class is not "Neoplasms and tumors”. Only a handful of diagnoses have a match in HAM10000 (for example nevocytic nevus, to nv and seborrheic keratosis to bkl). Because we mapped those there are now 16 mapped test images. The mapping was based on diagnosis names. Has not been checked by a dermatologist.
+P30 [Heading 1] Methodology
+P31 [Body Text] Fig.1 Design of the System Flowchart 
+P32 [Normal] (a) Training on HAM10000 (Dermoscopic Images)
+T0 rows=5
+   | Step | Process | Description
+   | 1 | HAM10000 Dataset | Lesion-grouped training, validation and test split.
+   | 2 | Preprocessing | Hair removal using black-hat filtering and inpainting, CLAHE, and image resizing.
+   | 3 | Model Training | Six ImageNet-pretrained backbones (CNN and ViT).
+   | 4 | Weighted Ensemble | Fine-tuning and combining model predictions using validation-selected weights.
+P33 [Normal] 
+P34 [Normal] (b) Two-Stage Use on Indian Clinical Photos
+T1 rows=6
+   | Step | Process | Description
+   | 1 | DermaCon-IN Dataset | Patient-wise split of Indian clinical photographs.
+   | 2 | Stage 1 Gate | EfficientNet-B0 trained on the eight main classes.
+   | 3 | Probability Check | Check whether the predicted neoplasm probability is at least threshold (t).
+   | 4 | If Yes | Send the image to the seven-class ensemble and generate Grad-CAM explanation.
+   | 5 | If No | Do not route the image to the tumour classifier.
+P35 [Normal] 
+P36 [Normal] (c) Supporting Studies
+T2 rows=6
+   | S. No. | Study | Description
+   | 1 | Class Imbalance | Compare strategies for handling unequal class distribution.
+   | 2 | Skin-Tone Augmentation | Evaluate augmentation methods intended to improve performance across skin tones.
+   | 3 | U-Net Crops | Use U-Net lesion masks to create cropped images for analysis.
+   | 4 | Image Corruptions | Test robustness against brightness reduction, blur and JPEG compression.
+   | 5 | Grad-CAM Deletion | Evaluate the faithfulness of model explanations using deletion and insertion.
+P37 [figure caption] Fig. 1. Overview. (a) HAM10000 models and ensemble. (b) Two-stage use on Indian clinical photographs. (c) Supporting studies on HAM10000.
+P38 [Heading 2] HAM10000 models
+P39 [Normal (Web)]  Each image is processed through a series of steps. First hair removal is done using black-hat filtering and inpainting. Then contrast-limited adaptive histogram equalisation is applied. After that the image is resized to 224 × 224 pixels. For training images are also randomly cropped, flipped, rotated and subjected to colour jittering.
+P40 [Normal (Web)] We tune several models: EfficientNet-B0, ResNet50 DenseNet121, ConvNeXt-Tiny. Swin-T. All of these models are pretrained on ImageNet. We also run a version of EfficientNet-B0.
+P41 [Normal (Web)] The loss function used is cross-entropy with rooted balanced class weights and label smoothing set to 0.05. Optimization is done using AdamW. The CNN models use a learning rate of 0.0003 with plateau decay. ConvNeXt-Tiny and Swin-T use a learning rate of 0.0001 with warm-up and cosine decay.
+P42 [Normal (Web)] We keep the model checkpoint that achieves the validation macro-F1 score. At test time each model averages predictions from the image and two flipped versions. The ensemble combines predictions using weights chosen from 4,000 weight vectors, with the best set selected based on validation macro-F1.
+P43 [Normal (Web)] All experiments are implemented in PyTorch [29]. Run on an Apple M2 Pro GPU.
+P44 [Heading 2] Zero-shot test and false-cancer rate
+P45 [Body Text] The HAM10000 models and the ensemble are used on DermaCon-IN test images using the preprocessing steps and without any retraining. The false-cancer rate is the percentage of -neoplastic images where the top class is mel, bcc or akiec. The intervals are Wilson intervals or bootstrap intervals based on patients or lesions, with 1,000 resamples; all of these are 95% intervals.
+P46 [Body Text] 
+P47 [Heading 2] Two-stage pipeline
+P48 [Heading 2] Stage 1 uses an EfficientNet-B0 model that was trained on the 8 classes from DermaCon-IN using the same training recipe across three different seeds. An image is only sent to the ensemble if its neoplasm probability is above a threshold t. For each seed the threshold t is set to the value that still includes at least 90% of the validation images that are actually neoplasms. This process resulted in thresholds of t = 0.0060, 0.0312 and 0.0457, for the three seeds.
+P49 [Body Text] 
+P50 [Heading 2] Supporting studies
+P51 [Heading 1] All use EfficientNet-B0 with seeds 0, 1 and 2. Report mean ± standard deviation. (I) Imbalance: no weighting, square-rooted weights (our default) inverse-frequency weights, loss with γ = 2  and a weighted random sampler; the rule fixed before training was the mean validation macro-F1, with melanoma recall breaking ties within 0.005. (Ii) Skin-tone augmentation on the selected setup: Shades of Grey colour constancy a LAB shift toward tones and hue/contrast jitter each with probability 0.5. (Iii) Lesion crops: a U-Net  with an EfficientNet-B0 encoder, trained on the public HAM10000 lesion masks gives a mask; we crop a square around it with a 15% margin. (Iv) Robustness: brightness reduction, blur and JPEG compression at five severities . (V) Explanations: deletion and insertion curves [36] for Grad-CAM . For a random map on 200 test images. The study models are evaluated on views and the effects of (ii) and (iii) are paired differences, with lesion-level bootstrap intervals.
+P52 [Heading 1] Experiments and Results
+P53 [Heading 2] HAM10000
+P54 [Body Text] Table I lists the HAM10000 test results. The weighted ensemble was chosen because it had the validation macro-F1 score of 0.760. In the test set the equal-weight ensemble achieved a higher macro-F1 of 0.750 but the weighted ensemble remained the choice we made. Unfortunately, the weighted ensemble still misclassified 43.1 % of the test melanomas with a 95 % confidence interval of 35.8 %, to 50.7 % labeling them as benign.
+P55 [table head] TABLE I. Test results on HAM10000 (1,502 images)
+T3 rows=9
+   | Model | Acc. | Macro-F1 | Mel. recall | Mal. sens. | AUC
+   | EfficientNet-B0 | 0.820 | 0.718 | 0.527 | 0.652 | 0.931
+   | EfficientNet-B0 (long) | 0.830 | 0.717 | 0.581 | 0.693 | 0.938
+   | ResNet50 | 0.808 | 0.695 | 0.593 | 0.710 | 0.951
+   | DenseNet121 | 0.796 | 0.643 | 0.425 | 0.545 | 0.946
+   | ConvNeXt-Tiny | 0.826 | 0.735 | 0.557 | 0.666 | 0.936
+   | Swin-T | 0.824 | 0.677 | 0.671 | 0.738 | 0.926
+   | Equal-weight ensemble | 0.848 | 0.750 | 0.635 | 0.717 | 0.966
+   | Weighted ensemble | 0.838 | 0.747 | 0.563 | 0.672 | 0.964
+P56 [table copy] Mal. sens.: malignant classes predicted as malignant. AUC: macro one-vs-rest. Bold: selected on validation.
+P57 [Heading 2] Zero-shot results on DermaCon-IN
+P58 [Body Text] Table II presents the zero-shot results. All models produced alarms ranging from 9.1% for EfficientNet-B0 to 29.2% for ConvNeXt-Tiny. The ensemble model had a call rate of 11.0%. When using a patient-level bootstrap the confidence interval was 8.9%, to 13.4%. Out of the 88 alarms 81 were predictions of melanoma. 
+P59 [table head] TABLE II. Zero-shot results on DermaCon-IN (test, 802 non-neoplastic images)
+T4 rows=9
+   | Model | FCR, % [95% CI] | Mal. det., % | Mapped acc., %
+   | EfficientNet-B0 | 9.1 [7.3, 11.3] | 26.3 | 12.5
+   | EfficientNet-B0 (long) | 10.1 [8.2, 12.4] | 31.6 | 0.0
+   | ResNet50 | 9.6 [7.8, 11.8] | 31.6 | 6.2
+   | DenseNet121 | 10.8 [8.9, 13.2] | 21.1 | 6.2
+   | ConvNeXt-Tiny | 29.2 [26.1, 32.4] | 57.9 | 18.8
+   | Swin-T | 16.6 [14.2, 19.3] | 36.8 | 6.2
+   | Weighted ensemble | 11.0 [9.0, 13.3] | 26.3 | 12.5
+   | Two-stage (gate + ensemble) | 5.6 ± 3.6 [4.4, 7.1] | – | –
+P60 [table copy] FCR: non-neoplastic images called mel, bcc or akiec (Wilson CI; two-stage: mean ± std over 3 seeds, patient bootstrap CI). Mal. det.: share of all 19 malignant DermaCon-IN images called malignant. Mapped acc.: accuracy on the 16 test images with a HAM10000 class.
+P61 [Normal] IMG 
+P62 [figure caption] Fig. 2. Ensemble false-cancer rate by disease group on the DermaCon-IN test split. The dashed line is the rate over all groups.
+P63 [Body Text] Fig. 2 Breaks the FCR down by disease group. Alarms were most common for skin disorders (28.6%) hair disorders (26.3%) acne (17.0%) and pigmentary disorders (16.9%) and least common for fungal infections (8.0%) and scabies and other parasitic conditions (3.3%). Small groups have intervals. By skin tone the rate was 11.0% for Fitzpatrick III–IV and 10.1% for V–VI, with overlapping intervals.
+P64 [Heading 2] The models also failed on the lesion types they were trained on. On the 16 mapped test images the ensemble was 12.5% of the time. Across all 19 images it detected 26.3% (95% CI 11.8–48.8%) and it called none of the 5 test basal cell carcinomas cancer. ConvNeXt-Tiny detected the most (57.9%). Had the highest FCR.
+P65 [Heading 2] Two-stage pipeline
+P66 [Body Text] The Stage 1 gate reached a test accuracy of 0.592 ± 0.013 and a macro-F1 of 0.422 ± 0.016 across the eight classes. With the gate the FCR dropped from 11.0 % to 5.6 % ± 3.6 % a reduction of 5.4 percentage points (95 % CI 4.1–6.8). The seeds varied a lot (9.7 %, 3.1 % and 3.9 %). The gate does not help with cell carcinomas, which the ensemble missed anyway. It also has a cost for dermoscopy: it passed only 30.9 % of HAM10000 validation lesions and 27.9 % of the malignant ones so it is suitable only, for clinical photo only 27.9% of the malignant cases. Therefore, this can only be applicable to clinical images.
+P67 [Heading 2] D.  Supporting studies on HAM10000
+P68 [table head] Table III shows how the different imbalance strategies compare. The rule chosen the weighted sampler during validation. On the test set the default square-rooted weights achieved a macro-F1 (95% confidence interval 0.641–0.738 versus 0.615–0.712 for the sampler) yet the intervals overlap. Inverse-frequency weights produced the melanoma recall but at the expense of accuracy. A single seed can mislead. Our original single-seed EfficientNet-B0, evaluated on views reached a macro-F1 of 0.721 which is higher, than the mean macro-F1 of the same recipe when using three seeds.
+P69 [table head] TABLE III. Class-imbalance strategies (EfficientNet-B0, mean ± std over 3 seeds)
+T5 rows=6
+   | Strategy | Val. F1 | Test macro-F1 | Test mel. recall
+   | None | 0.678 | 0.683 ± 0.023 | 0.597 ± 0.075
+   | √ weights (default) | 0.679 | 0.695 ± 0.023 | 0.643 ± 0.052
+   | Inverse frequency | 0.661 | 0.650 ± 0.015 | 0.739 ± 0.035
+   | Focal loss | 0.663 | 0.649 ± 0.033 | 0.601 ± 0.056
+   | Weighted sampler | 0.684 | 0.670 ± 0.029 | 0.649 ± 0.076
+P70 [table copy] Bold: selected on validation macro-F1.
+P71 [table head] TABLE IV. Paired effects on HAM10000 test (3 seeds, 95% bootstrap CI)
+T6 rows=3
+   | Change | Δ Macro-F1 | Δ Mal. sens. | Δ Mal. spec.
+   | Skin-tone augmentation | −0.014 [−0.051, +0.023] | −0.014 [−0.045, +0.017] | +0.015 [+0.002, +0.030]
+   | Lesion crop (U-Net) | +0.058 [+0.022, +0.096] | −0.048 [−0.089, −0.009] | +0.061 [+0.046, +0.078]
+P72 [table copy] Both are compared with the selected setup (weighted sampler) trained on full images.
+P73 [Body Text] Table IV Skin-tone augmentation shows no effect on HAM10000. In DermaCon-IN skin-tone augmentation raised the FCR to 19.8% ± 13.9% from 16.3% ± 7.2%. Skin-tone augmentation identified more of the 5 test basal cell carcinomas as cancer with an average of 4.7 versus 2.7. This means skin-tone augmentation made the model more likely to label photographs as cancer, but skin-tone augmentation was not more accurate. The U-Net reached a test Dice score of 0.943 ± 0.001 while Otsu thresholding gave 0.652. Training on crops raised macro-F1 and specificity. Training on crops lowered malignant sensitivity. Both confidence intervals exclude zero cropping trades missed cancers, for fewer false alarms.
+P74 [Normal] IMG 
+P75 [figure caption] Fig. 3. Effect of image corruptions on HAM10000. (a) Macro-F1 under darkening, blur and JPEG compression. (b) Malignant sensitivity, clean vs. JPEG.
+P76 [Body Text] Under the corruptions the groups macro-F1 went down from 0.763 to 0.574 (darkening) 0.549 (blur) and 0.480 (JPEG). JPEG compression affected cancer detection the most: malignant sensitivity went down from 69.3 percent to 18.6 percent. Swin-T did the best under darkening (0.675). For every model Grad-CAM produced a deletion score than a random map (for example EfficientNet-B0 0.555, against 0.630) so the heatmaps show the regions the models use.
+P77 [Body Text] 
+P78 [Body Text] 
+P79 [Body Text] 
+P80 [Heading 1] Discussion and Limitations
+P81 [Body Text] An ensemble model with a HAM10000 macro-F1 score of 0.747 marked 11.0 % of photographs of Indian skin as cancer. The alerts focused on hair disorders, acne and pigmentary disorders and most of the alerts were melanoma predictions. In the DermaCon-IN study the rate was the same, for all Fitzpatrick groups, which shows that the mix of cases and the type of imaging not skin tone are the main problems. The same pattern holds across all Fitzpatrick groups. If we first check whether an image shows a tumour the error rate drops to 5.6 %. This check is weak and does not work for dermoscopy images.
+P82 [Body Text] Limitations :
+P83 [Body Text] (1) DermaCon-IN images are clinical photos while HAM10000 images are taken with a dermoscope. Because of this we cannot separate how skin tone affects the pictures from how the imaging method does.
+P84 [Body Text] (2) 19 DermaCon-IN images show cancer and only 5 of those are in the test set. All of them are cell carcinomas so we do not know how well the system detects cancer on Indian skin. No melanoma appears in the test set.
+P85 [Body Text] (3) The way we matched DermaCon-IN diagnoses to the classes used in HAM10000 has not been checked by a dermatologist.
+P86 [Body Text] (4) The gate threshold was tuned using 10 validation images that contain tumors and the results vary when we use different random seeds.
+P87 [Body Text] (5) Our method for picking a model from the validation data chose a setup that was imbalanced and scored lower on the test data than the default option. We report that result of changing the choice.
+P88 [Body Text] (6) We did not have a dataset of darker-skin patients with biopsy-confirmed cancers so we could not test whether cancers, on skin were missed.
+P89 [Body Text] (7) None of these points have been validated in a clinical setting. The web application that comes with this work is meant for research and teaching only.
+P90 [Body Text] 
+P91 [Body Text] 
+P92 [Body Text] 
+P93 [Body Text] 
+P94 [Body Text] 
+P95 [Body Text] 
+P96 [Body Text] 
+P97 [Body Text] 
+P98 [Body Text] 
+P99 [Body Text] 
+P100 [Body Text] 
+P101 [Body Text] 
+P102 [Body Text] 
+P103 [Body Text] 
+P104 [Body Text] 
+P105 [Body Text] Conclusion :
+P106 [Heading 5] Good HAM10000 numbers did not work when applied to clinical photographs. Our models created cancer alarms for common non-tumour conditions. They recognized a few of the lesion types they were trained on. They missed most of the Indian cancers that were available. A gate trained on data helped reduce the alarms. Measuring cancer sensitivity on skin requires Indian dermoscopic and clinical images with biopsy-confirmed cancers. This is the step for this work.
+P107 [Heading 5] Acknowledgment:
+P108 [Heading 5] We thank Prof. Kusuma J for supervising this project. We thank Prof. Kusuma J for supervising this project. We thank the DermaCon-IN authors for granting research access to their dataset. We thank the DermaCon-IN authors for granting research access to their dataset. We thank the HAM10000 authors for making their images public. We thank the HAM10000 authors for making their images public. The authors used an AI assistant, Claude, to help draft and edit this manuscript. The authors used an AI assistant, Claude, to help draft and edit this manuscript; all experiments, results and final text were. Verified by the authors.
+P109 [Normal] 
+P110 [Heading 5] 
+P111 [Heading 5] 
+P112 [Heading 5] 
+P113 [Heading 5] 
+P114 [Heading 5] 
+P115 [Heading 5] 
+P116 [Heading 5] 
+P117 [Heading 5] 
+P118 [Heading 5] 
+P119 [Heading 5] 
+P120 [Heading 5] 
+P121 [Heading 5] 
+P122 [Heading 5] 
+P123 [Heading 5] 
+P124 [Heading 5] 
+P125 [Heading 5] 
+P126 [Heading 5] 
+P127 [Heading 5] 
+P128 [Heading 5] 
+P129 [Heading 5] 
+P130 [Heading 5] 
+P131 [Heading 5] 
+P132 [Heading 5] 
+P133 [Heading 5] 
+P134 [Heading 5] 
+P135 [Heading 5] 
+P136 [Heading 5] 
+P137 [Heading 5] 
+P138 [Heading 5] 
+P139 [Heading 5] 
+P140 [Heading 5] 
+P141 [Heading 5] 
+P142 [Heading 5] 
+P143 [Heading 5] 
+P144 [Heading 5] References:
+P145 [references] [1]	P. Tschandl, C. Rosendahl, and H. Kittler, “The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions,” Scientific Data, vol. 5, no. 1, art. 180161, 2018, doi: 10.1038/sdata.2018.161.
+P146 [references] [2]	N. Codella et al., “Skin lesion analysis toward melanoma detection 2018: A challenge hosted by the International Skin Imaging Collaboration (ISIC),” arXiv:1902.03368, 2019.
+P147 [references] [3]	A. S. Adamson and A. Smith, “Machine learning and health care disparities in dermatology,” JAMA Dermatology, vol. 154, no. 11, p. 1247, 2018, doi: 10.1001/jamadermatol.2018.2348.
+P148 [references] [4]	N. M. Kinyanjui et al., “Fairness of classifiers across skin tones in dermatology,” in Medical Image Computing and Computer Assisted Intervention (MICCAI 2020), Lecture Notes in Computer Science, 2020, pp. 320–329, doi: 10.1007/978-3-030-59725-2_31.
+P149 [references] [5]	M. Groh et al., “Evaluating deep neural networks trained on clinical images in dermatology with the Fitzpatrick 17k dataset,” in IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2021, pp. 1820–1828, doi: 10.1109/CVPRW53098.2021.00201.
+P150 [references] [6]	S. S. Madarkar et al., “DermaCon-IN: A multiconcept-annotated dermatological image dataset of Indian skin disorders for clinical AI research,” in Advances in Neural Information Processing Systems 38 (NeurIPS 2025), 2025, pp. 124163–124181, doi: 10.52202/085713-3742.
+P151 [references] [7]	A. Esteva et al., “Dermatologist-level classification of skin cancer with deep neural networks,” Nature, vol. 542, no. 7639, pp. 115–118, 2017, doi: 10.1038/nature21056.
+P152 [references] [8]	S. S. Chaturvedi, K. Gupta, and P. S. Prasad, “Skin lesion analyser: An efficient seven-way multi-class skin cancer classification using MobileNet,” in Advanced Machine Learning Technologies and Applications (AMLTA 2020), Advances in Intelligent Systems and Computing, vol. 1141, Springer, 2020, doi: 10.1007/978-981-15-3383-9_15.
+P153 [references] [9]	Al Mahmud, H. Ajami, M. S. U. Hoque, R. Silwal, M. K. Nigjeh, and S. E. Umbaugh, “Comparison of performance of two deep learning models for classification of skin lesions using image resampling technique for data augmentation,” in Proc. SPIE 13137, Applications of Digital Image Processing XLVII, 2024, doi: 10.1117/12.3027916.
+P154 [references] [10]	B. V. Subbayamma et al., “A transfer learning-based VGG16 deep convolutional framework for multi-class skin lesion classification using the HAM10000 dataset,” Ingénierie des Systèmes d'Information, vol. 31, no. 6, 2026, doi: 10.18280/isi.310605.
+P155 [references] [11]	M. Tahir, A. Naeem, H. Malik, J. Tanveer, R. A. Naqvi, and S.-W. Lee, “DSCC_Net: Multi-classification deep learning models for diagnosing of skin cancer using dermoscopic images,” Cancers, vol. 15, no. 7, art. 2179, 2023, doi: 10.3390/cancers15072179.
+P156 [references] [12]	M. Hajiarbabi, “Skin cancer detection using multi-scale deep learning and transfer learning,” Journal of Medical Artificial Intelligence, vol. 6, art. 23, 2023, doi: 10.21037/jmai-23-67.
+P157 [references] [13]	V. Radhika and B. S. Chandana, “MSCDNet-based multi-class classification of skin cancer using dermoscopy images,” PeerJ Computer Science, vol. 9, art. e1520, 2023, doi: 10.7717/peerj-cs.1520.
+P158 [references] [14]	M. U. Ali, M. Khalid, H. Alshanbari, A. Zafar, and S. W. Lee, “Enhancing skin lesion detection: A multistage multiclass convolutional neural network-based framework,” Bioengineering, vol. 10, no. 12, art. 1430, 2023, doi: 10.3390/bioengineering10121430.
+P159 [references] [15]	R. Islam and L. Ferdouse, “Uncertainty-aware and explainable ensemble deep learning framework for multi-class skin lesion classification,” arXiv:2608.11280, 2026.
+P160 [references] [16]	N. Sravani and S. Koppu, “Multi-paradigm Vision Transformer ensemble with regional attention and MLP meta-fusion for explainable dermoscopic skin lesion classification,” Frontiers in Medicine, vol. 13, art. 1864593, 2026, doi: 10.3389/fmed.2026.1864593.
+P161 [references] [17]	S. Ilyosbekov, “MelanomaNet: Explainable deep learning for skin lesion classification,” arXiv:2512.09289, 2025.
+P162 [references] [18]	T. B. Fitzpatrick, “The validity and practicality of sun-reactive skin types I through VI,” Archives of Dermatology, vol. 124, no. 6, p. 869, 1988, doi: 10.1001/archderm.1988.01670060015008.
+P163 [references] [19]	E. Monk, “The Monk Skin Tone Scale,” SocArXiv preprint, 2023, doi: 10.31235/osf.io/pdf4c.
+P164 [references] [20]	T. Lee, V. Ng, R. Gallagher, A. Coldman, and D. McLean, “DullRazor: A software approach to hair removal from images,” Computers in Biology and Medicine, vol. 27, no. 6, pp. 533–543, 1997, doi: 10.1016/S0010-4825(97)00020-6.
+P165 [references] [21]	K. Zuiderveld, “Contrast limited adaptive histogram equalization,” in Graphics Gems IV, Academic Press, 1994, pp. 474–485, doi: 10.1016/B978-0-12-336156-1.50061-6.
+P166 [references] [22]	M. Tan and Q. V. Le, “EfficientNet: Rethinking model scaling for convolutional neural networks,” in International Conference on Machine Learning (ICML), 2019, arXiv:1905.11946.
+P167 [references] [23]	K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016, pp. 770–778, doi: 10.1109/CVPR.2016.90.
+P168 [references] [24]	G. Huang, Z. Liu, L. van der Maaten, and K. Q. Weinberger, “Densely connected convolutional networks,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 2261–2269, doi: 10.1109/CVPR.2017.243.
+P169 [references] [25]	Z. Liu, H. Mao, C.-Y. Wu, C. Feichtenhofer, T. Darrell, and S. Xie, “A ConvNet for the 2020s,” in IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022, pp. 11966–11976, doi: 10.1109/CVPR52688.2022.01167.
+P170 [references] [26]	Z. Liu et al., “Swin Transformer: Hierarchical vision transformer using shifted windows,” in IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 9992–10002, doi: 10.1109/ICCV48922.2021.00986.
+P171 [references] [27]	J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei, “ImageNet: A large-scale hierarchical image database,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2009, pp. 248–255, doi: 10.1109/CVPR.2009.5206848.
+P172 [references] [28]	I. Loshchilov and F. Hutter, “Decoupled weight decay regularization,” arXiv:1711.05101, 2017.
+P173 [references] [29]	A. Paszke et al., “PyTorch: An imperative style, high-performance deep learning library,” arXiv:1912.01703, 2019.
+P174 [references] [30]	E. B. Wilson, “Probable inference, the law of succession, and statistical inference,” Journal of the American Statistical Association, vol. 22, no. 158, pp. 209–212, 1927, doi: 10.1080/01621459.1927.10502953.
+P175 [references] [31]	B. Efron, “Bootstrap methods: Another look at the jackknife,” The Annals of Statistics, vol. 7, no. 1, pp. 1–26, 1979, doi: 10.1214/aos/1176344552.
+P176 [references] [32]	T.-Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollár, “Focal loss for dense object detection,” in IEEE International Conference on Computer Vision (ICCV), 2017, pp. 2999–3007, doi: 10.1109/ICCV.2017.324.
+P177 [references] [33]	G. D. Finlayson and E. Trezzi, “Shades of gray and colour constancy,” Color and Imaging Conference, vol. 12, no. 1, pp. 37–41, 2004, doi: 10.2352/CIC.2004.12.1.art00008.
+P178 [references] [34]	O. Ronneberger, P. Fischer, and T. Brox, “U-Net: Convolutional networks for biomedical image segmentation,” in Medical Image Computing and Computer-Assisted Intervention (MICCAI 2015), Lecture Notes in Computer Science, 2015, pp. 234–241, doi: 10.1007/978-3-319-24574-4_28.
+P179 [references] [35]	D. Hendrycks and T. Dietterich, “Benchmarking neural network robustness to common corruptions and perturbations,” arXiv:1903.12261, 2019.
+P180 [references] [36]	V. Petsiuk, A. Das, and K. Saenko, “RISE: Randomized input sampling for explanation of black-box models,” arXiv:1806.07421, 2018.
+P181 [references] [37]	R. R. Selvaraju, M. Cogswell, A. Das, R. Vedantam, D. Parikh, and D. Batra, “Grad-CAM: Visual explanations from deep networks via gradient-based localization,” in IEEE International Conference on Computer Vision (ICCV), 2017, pp. 618–626, doi: 10.1109/ICCV.2017.74.
+P182 [references] 
+P183 [Normal] 

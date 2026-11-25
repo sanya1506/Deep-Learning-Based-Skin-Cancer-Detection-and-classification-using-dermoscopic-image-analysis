@@ -1,0 +1,9 @@
+{
+  "model": "resnet50",
+  "epochs_run": 14,
+  "best_val_f1": 0.7195974725469511,
+  "train_minutes": 31.464817599455515,
+  "device": "mps",
+  "train_size": 6981,
+  "quick": false
+}

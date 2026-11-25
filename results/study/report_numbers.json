@@ -1,0 +1,5178 @@
+{
+ "dermacon/disease_groups.csv": [
+  {
+   "group": "Acne / sebaceous",
+   "images": 352
+  },
+  {
+   "group": "Bacterial infection",
+   "images": 316
+  },
+  {
+   "group": "Eczema / dermatitis",
+   "images": 727
+  },
+  {
+   "group": "Fungal infection",
+   "images": 1552
+  },
+  {
+   "group": "Hair disorders",
+   "images": 128
+  },
+  {
+   "group": "Infectious Disorders",
+   "images": 11
+  },
+  {
+   "group": "Inflammatory Disorders",
+   "images": 447
+  },
+  {
+   "group": "Keratanisation Disorders",
+   "images": 72
+  },
+  {
+   "group": "Neoplasms and tumors",
+   "images": 52
+  },
+  {
+   "group": "No Definite Diagnosis",
+   "images": 37
+  },
+  {
+   "group": "Other skin disorders",
+   "images": 159
+  },
+  {
+   "group": "Parasitic (scabies etc.)",
+   "images": 241
+  },
+  {
+   "group": "Pigmentary Disorders",
+   "images": 831
+  },
+  {
+   "group": "Psoriasis / lichenoid",
+   "images": 418
+  },
+  {
+   "group": "Viral infection",
+   "images": 107
+  }
+ ],
+ "dermacon/ensemble_top_class_non_neoplastic.csv": [
+  {
+   "Unnamed: 0": "nv",
+   "images": 537
+  },
+  {
+   "Unnamed: 0": "bkl",
+   "images": 137
+  },
+  {
+   "Unnamed: 0": "mel",
+   "images": 77
+  },
+  {
+   "Unnamed: 0": "df",
+   "images": 42
+  },
+  {
+   "Unnamed: 0": "akiec",
+   "images": 19
+  },
+  {
+   "Unnamed: 0": "bcc",
+   "images": 4
+  },
+  {
+   "Unnamed: 0": "vasc",
+   "images": 1
+  }
+ ],
+ "dermacon/table_3_2_main_classes.csv": [
+  {
+   "main_class": "Infectious Disorders",
+   "images": 2227,
+   "patients": 1456
+  },
+  {
+   "main_class": "Inflammatory Disorders",
+   "images": 1592,
+   "patients": 858
+  },
+  {
+   "main_class": "Pigmentary Disorders",
+   "images": 831,
+   "patients": 461
+  },
+  {
+   "main_class": "Skin Appendages Disorders",
+   "images": 480,
+   "patients": 270
+  },
+  {
+   "main_class": "Other skin disorders",
+   "images": 159,
+   "patients": 117
+  },
+  {
+   "main_class": "Keratanisation Disorders",
+   "images": 72,
+   "patients": 37
+  },
+  {
+   "main_class": "Neoplasms and tumors",
+   "images": 52,
+   "patients": 31
+  },
+  {
+   "main_class": "No Definite Diagnosis",
+   "images": 37,
+   "patients": 35
+  }
+ ],
+ "dermacon/table_3_3_split.csv": [
+  {
+   "main_class": "Infectious Disorders",
+   "train": 1554,
+   "val": 337,
+   "test": 336
+  },
+  {
+   "main_class": "Inflammatory Disorders",
+   "train": 1115,
+   "val": 234,
+   "test": 243
+  },
+  {
+   "main_class": "Pigmentary Disorders",
+   "train": 592,
+   "val": 116,
+   "test": 123
+  },
+  {
+   "main_class": "Skin Appendages Disorders",
+   "train": 323,
+   "val": 76,
+   "test": 81
+  },
+  {
+   "main_class": "Other skin disorders",
+   "train": 118,
+   "val": 22,
+   "test": 19
+  },
+  {
+   "main_class": "Keratanisation Disorders",
+   "train": 48,
+   "val": 14,
+   "test": 10
+  },
+  {
+   "main_class": "Neoplasms and tumors",
+   "train": 38,
+   "val": 6,
+   "test": 8
+  },
+  {
+   "main_class": "No Definite Diagnosis",
+   "train": 27,
+   "val": 5,
+   "test": 5
+  },
+  {
+   "main_class": "TOTAL images",
+   "train": 3815,
+   "val": 810,
+   "test": 825
+  },
+  {
+   "main_class": "TOTAL patients",
+   "train": 2095,
+   "val": 449,
+   "test": 449
+  }
+ ],
+ "dermacon/table_3_4_malignant.csv": [
+  {
+   "diagnosis": "Basal Cell Carcinoma",
+   "test": 4,
+   "train": 5,
+   "val": 1,
+   "patients": 6
+  },
+  {
+   "diagnosis": "Bowen's Metastasis",
+   "test": 0,
+   "train": 1,
+   "val": 0,
+   "patients": 1
+  },
+  {
+   "diagnosis": "Keratoacanthoma",
+   "test": 0,
+   "train": 0,
+   "val": 1,
+   "patients": 1
+  },
+  {
+   "diagnosis": "Melanoma",
+   "test": 0,
+   "train": 2,
+   "val": 0,
+   "patients": 1
+  },
+  {
+   "diagnosis": "Squamous Cell Carcinoma",
+   "test": 0,
+   "train": 5,
+   "val": 0,
+   "patients": 4
+  }
+ ],
+ "dermacon/table_3_5_mapping.csv": [
+  {
+   "ham_class": "bcc",
+   "images": 10,
+   "patients": 6
+  },
+  {
+   "ham_class": "bkl",
+   "images": 7,
+   "patients": 4
+  },
+  {
+   "ham_class": "df",
+   "images": 1,
+   "patients": 1
+  },
+  {
+   "ham_class": "mel",
+   "images": 2,
+   "patients": 1
+  },
+  {
+   "ham_class": "nv",
+   "images": 17,
+   "patients": 16
+  },
+  {
+   "ham_class": "unmapped",
+   "images": 5394,
+   "patients": 2964
+  },
+  {
+   "ham_class": "vasc",
+   "images": 19,
+   "patients": 13
+  }
+ ],
+ "dermacon/table_3_6_skin_tone.csv": [
+  {
+   "Unnamed: 0": "Fitzpatrick type 3",
+   "images": 1403
+  },
+  {
+   "Unnamed: 0": "Fitzpatrick type 4",
+   "images": 2620
+  },
+  {
+   "Unnamed: 0": "Fitzpatrick type 5",
+   "images": 1285
+  },
+  {
+   "Unnamed: 0": "Fitzpatrick type 6",
+   "images": 136
+  },
+  {
+   "Unnamed: 0": "Monk tone 4",
+   "images": 152
+  },
+  {
+   "Unnamed: 0": "Monk tone 5",
+   "images": 1272
+  },
+  {
+   "Unnamed: 0": "Monk tone 6",
+   "images": 1961
+  },
+  {
+   "Unnamed: 0": "Monk tone 7",
+   "images": 1684
+  },
+  {
+   "Unnamed: 0": "Monk tone 8",
+   "images": 368
+  },
+  {
+   "Unnamed: 0": "Monk tone 9",
+   "images": 7
+  }
+ ],
+ "dermacon/table_6_3_fcr.csv": [
+  {
+   "model": "efficientnet_b0",
+   "called_cancer": 51.0,
+   "n": 817.0,
+   "fcr": 0.0624235006119951,
+   "wilson": "[0.047795184869814614, 0.08114744800541156]",
+   "patient_ci": "[0.046904225227614255, 0.07941677751912203]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "called_cancer": 51.0,
+   "n": 817.0,
+   "fcr": 0.0624235006119951,
+   "wilson": "[0.047795184869814614, 0.08114744800541156]",
+   "patient_ci": "[0.046904225227614255, 0.07941677751912203]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "resnet50",
+   "called_cancer": 60.0,
+   "n": 817.0,
+   "fcr": 0.0734394124847001,
+   "wilson": "[0.057479225154934005, 0.09339212465490185]",
+   "patient_ci": "[0.05593201754385965, 0.0930268669651885]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "densenet121",
+   "called_cancer": 58.0,
+   "n": 817.0,
+   "fcr": 0.0709914320685434,
+   "wilson": "[0.05531643915851919, 0.09068186244362561]",
+   "patient_ci": "[0.05325768482548144, 0.09101945479406251]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "convnext_tiny",
+   "called_cancer": 208.0,
+   "n": 817.0,
+   "fcr": 0.2545899632802937,
+   "wilson": "[0.22591493330742132, 0.2855619838715517]",
+   "patient_ci": "[0.22101881607434223, 0.2891795172644988]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "swin_t",
+   "called_cancer": 210.0,
+   "n": 817.0,
+   "fcr": 0.2570379436964504,
+   "wilson": "[0.22825824123178753, 0.2880917241548766]",
+   "patient_ci": "[0.2222157320872274, 0.28944264277469356]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "ensemble",
+   "called_cancer": 100.0,
+   "n": 817.0,
+   "fcr": 0.1223990208078335,
+   "wilson": "[0.10167557416663112, 0.1466567397970256]",
+   "patient_ci": "[0.09961581011767073, 0.14497802974922927]",
+   "fcr_std": NaN,
+   "per_seed": NaN
+  },
+  {
+   "model": "Selected study setup (3 seeds)",
+   "called_cancer": NaN,
+   "n": NaN,
+   "fcr": 0.040391676866585,
+   "wilson": NaN,
+   "patient_ci": "(0.030774345790237974, 0.050322852774611446)",
+   "fcr_std": 0.0232558139534883,
+   "per_seed": "[np.float64(0.03427172582619339), np.float64(0.06609547123623011), np.float64(0.0208078335373317)]"
+  },
+  {
+   "model": "Skin-tone augmented (3 seeds)",
+   "called_cancer": NaN,
+   "n": NaN,
+   "fcr": 0.1627906976744186,
+   "wilson": NaN,
+   "patient_ci": "(0.14297561775284692, 0.18471753537811358)",
+   "fcr_std": 0.1283790110423724,
+   "per_seed": "[np.float64(0.06609547123623011), np.float64(0.11383108935128519), np.float64(0.3084455324357405)]"
+  },
+  {
+   "model": "Crop model (3 seeds)",
+   "called_cancer": NaN,
+   "n": NaN,
+   "fcr": 0.0542635658914728,
+   "wilson": NaN,
+   "patient_ci": "(0.04345817035736651, 0.06749010016305615)",
+   "fcr_std": 0.0563079841440965,
+   "per_seed": "[np.float64(0.014687882496940025), np.float64(0.02937576499388005), np.float64(0.11872705018359853)]"
+  }
+ ],
+ "dermacon/table_6_3_fcr.json": {
+  "rows": [
+   {
+    "model": "efficientnet_b0",
+    "called_cancer": 51,
+    "n": 817,
+    "fcr": 0.06242350061199511,
+    "wilson": [
+     0.047795184869814614,
+     0.08114744800541156
+    ],
+    "patient_ci": [
+     0.046904225227614255,
+     0.07941677751912203
+    ]
+   },
+   {
+    "model": "efficientnet_b0_long",
+    "called_cancer": 51,
+    "n": 817,
+    "fcr": 0.06242350061199511,
+    "wilson": [
+     0.047795184869814614,
+     0.08114744800541156
+    ],
+    "patient_ci": [
+     0.046904225227614255,
+     0.07941677751912203
+    ]
+   },
+   {
+    "model": "resnet50",
+    "called_cancer": 60,
+    "n": 817,
+    "fcr": 0.07343941248470012,
+    "wilson": [
+     0.057479225154934005,
+     0.09339212465490185
+    ],
+    "patient_ci": [
+     0.05593201754385965,
+     0.0930268669651885
+    ]
+   },
+   {
+    "model": "densenet121",
+    "called_cancer": 58,
+    "n": 817,
+    "fcr": 0.07099143206854346,
+    "wilson": [
+     0.05531643915851919,
+     0.09068186244362561
+    ],
+    "patient_ci": [
+     0.05325768482548144,
+     0.09101945479406251
+    ]
+   },
+   {
+    "model": "convnext_tiny",
+    "called_cancer": 208,
+    "n": 817,
+    "fcr": 0.25458996328029376,
+    "wilson": [
+     0.22591493330742132,
+     0.2855619838715517
+    ],
+    "patient_ci": [
+     0.22101881607434223,
+     0.2891795172644988
+    ]
+   },
+   {
+    "model": "swin_t",
+    "called_cancer": 210,
+    "n": 817,
+    "fcr": 0.25703794369645044,
+    "wilson": [
+     0.22825824123178753,
+     0.2880917241548766
+    ],
+    "patient_ci": [
+     0.2222157320872274,
+     0.28944264277469356
+    ]
+   },
+   {
+    "model": "ensemble",
+    "called_cancer": 100,
+    "n": 817,
+    "fcr": 0.12239902080783353,
+    "wilson": [
+     0.10167557416663112,
+     0.1466567397970256
+    ],
+    "patient_ci": [
+     0.09961581011767073,
+     0.14497802974922927
+    ]
+   },
+   {
+    "model": "Selected study setup (3 seeds)",
+    "fcr": 0.04039167686658507,
+    "fcr_std": 0.023255813953488372,
+    "per_seed": [
+     0.03427172582619339,
+     0.06609547123623011,
+     0.0208078335373317
+    ],
+    "patient_ci": [
+     0.030774345790237974,
+     0.050322852774611446
+    ]
+   },
+   {
+    "model": "Skin-tone augmented (3 seeds)",
+    "fcr": 0.1627906976744186,
+    "fcr_std": 0.12837901104237245,
+    "per_seed": [
+     0.06609547123623011,
+     0.11383108935128519,
+     0.3084455324357405
+    ],
+    "patient_ci": [
+     0.14297561775284692,
+     0.18471753537811358
+    ]
+   },
+   {
+    "model": "Crop model (3 seeds)",
+    "fcr": 0.054263565891472874,
+    "fcr_std": 0.05630798414409654,
+    "per_seed": [
+     0.014687882496940025,
+     0.02937576499388005,
+     0.11872705018359853
+    ],
+    "patient_ci": [
+     0.04345817035736651,
+     0.06749010016305615
+    ]
+   }
+  ],
+  "test_malignant_called_by_study_models": {
+   "study": [
+    3,
+    2,
+    1
+   ],
+   "skin": [
+    2,
+    2,
+    3
+   ]
+  },
+  "n_test_malignant": 4
+ },
+ "dermacon/table_6_4_groups.csv": [
+  {
+   "group": "Acne / sebaceous",
+   "images": 60,
+   "called_cancer": 10,
+   "fcr": 0.1666666666666666,
+   "wilson_lo": 0.093131769363607,
+   "wilson_hi": 0.2803161326592111
+  },
+  {
+   "group": "Parasitic (scabies etc.)",
+   "images": 14,
+   "called_cancer": 2,
+   "fcr": 0.1428571428571428,
+   "wilson_lo": 0.0400939209076489,
+   "wilson_hi": 0.399413797237337
+  },
+  {
+   "group": "Eczema / dermatitis",
+   "images": 114,
+   "called_cancer": 16,
+   "fcr": 0.1403508771929824,
+   "wilson_lo": 0.0882740655030923,
+   "wilson_hi": 0.2158757576707687
+  },
+  {
+   "group": "Pigmentary Disorders",
+   "images": 123,
+   "called_cancer": 17,
+   "fcr": 0.1382113821138211,
+   "wilson_lo": 0.0881164561458365,
+   "wilson_hi": 0.2102202171709672
+  },
+  {
+   "group": "Bacterial infection",
+   "images": 58,
+   "called_cancer": 8,
+   "fcr": 0.1379310344827586,
+   "wilson_lo": 0.071584869830621,
+   "wilson_hi": 0.2492590953704823
+  },
+  {
+   "group": "Inflammatory Disorders",
+   "images": 64,
+   "called_cancer": 8,
+   "fcr": 0.125,
+   "wilson_lo": 0.0647224263016111,
+   "wilson_hi": 0.2277456191750217
+  },
+  {
+   "group": "Viral infection",
+   "images": 25,
+   "called_cancer": 3,
+   "fcr": 0.12,
+   "wilson_lo": 0.0416681711790503,
+   "wilson_hi": 0.2995579409188468
+  },
+  {
+   "group": "Fungal infection",
+   "images": 239,
+   "called_cancer": 26,
+   "fcr": 0.1087866108786611,
+   "wilson_lo": 0.0753271483276052,
+   "wilson_hi": 0.1546231210314337
+  },
+  {
+   "group": "Other skin disorders",
+   "images": 19,
+   "called_cancer": 2,
+   "fcr": 0.1052631578947368,
+   "wilson_lo": 0.0293585600331968,
+   "wilson_hi": 0.3139408291190902
+  },
+  {
+   "group": "Keratanisation Disorders",
+   "images": 10,
+   "called_cancer": 1,
+   "fcr": 0.1,
+   "wilson_lo": 0.0178762128960739,
+   "wilson_hi": 0.4041500295247722
+  },
+  {
+   "group": "Psoriasis / lichenoid",
+   "images": 65,
+   "called_cancer": 6,
+   "fcr": 0.0923076923076923,
+   "wilson_lo": 0.0429950893600192,
+   "wilson_hi": 0.1871200060886634
+  },
+  {
+   "group": "Hair disorders",
+   "images": 21,
+   "called_cancer": 1,
+   "fcr": 0.0476190476190476,
+   "wilson_lo": 0.0084559877161013,
+   "wilson_hi": 0.2266936027008382
+  },
+  {
+   "group": "No Definite Diagnosis",
+   "images": 5,
+   "called_cancer": 0,
+   "fcr": 0.0,
+   "wilson_lo": 0.0,
+   "wilson_hi": 0.4344824686593928
+  }
+ ],
+ "dermacon/table_6_5_skin_tone.csv": [
+  {
+   "scale": "Fitzpatrick",
+   "group": "FST III-IV",
+   "images": 601,
+   "fcr": 0.1281198003327787,
+   "wilson_lo": 0.1037414826771791,
+   "wilson_hi": 0.1572218765033187
+  },
+  {
+   "scale": "Fitzpatrick",
+   "group": "FST V-VI",
+   "images": 215,
+   "fcr": 0.1023255813953488,
+   "wilson_lo": 0.0685493962986517,
+   "wilson_hi": 0.1500630143746209
+  },
+  {
+   "scale": "Monk",
+   "group": "MST 1-5",
+   "images": 212,
+   "fcr": 0.1556603773584905,
+   "wilson_lo": 0.1130373903728061,
+   "wilson_hi": 0.2105401986746528
+  },
+  {
+   "scale": "Monk",
+   "group": "MST 6",
+   "images": 283,
+   "fcr": 0.1024734982332155,
+   "wilson_lo": 0.0722998753323781,
+   "wilson_hi": 0.1432946873312009
+  },
+  {
+   "scale": "Monk",
+   "group": "MST 7",
+   "images": 245,
+   "fcr": 0.1183673469387755,
+   "wilson_lo": 0.0836915330267504,
+   "wilson_hi": 0.164825973498543
+  },
+  {
+   "scale": "Monk",
+   "group": "MST 8-10",
+   "images": 76,
+   "fcr": 0.1052631578947368,
+   "wilson_lo": 0.0543112615495334,
+   "wilson_hi": 0.1941994640722918
+  }
+ ],
+ "dermacon/table_6_6_secondary.csv": [
+  {
+   "model": "efficientnet_b0",
+   "mapped_acc_test": 0.2222222222222222,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.4736842105263157,
+   "malignant_k": 9,
+   "malignant_n": 19,
+   "wilson_lo": 0.2732980503254139,
+   "wilson_hi": 0.6829219089514051,
+   "fcr_all_images": 0.0676176361615413
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "mapped_acc_test": 0.2222222222222222,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.4736842105263157,
+   "malignant_k": 9,
+   "malignant_n": 19,
+   "wilson_lo": 0.2732980503254139,
+   "wilson_hi": 0.6829219089514051,
+   "fcr_all_images": 0.0676176361615413
+  },
+  {
+   "model": "resnet50",
+   "mapped_acc_test": 0.2222222222222222,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.2105263157894736,
+   "malignant_k": 4,
+   "malignant_n": 19,
+   "wilson_lo": 0.0850767657361733,
+   "wilson_hi": 0.4333427863088371,
+   "fcr_all_images": 0.0759540570581697
+  },
+  {
+   "model": "densenet121",
+   "mapped_acc_test": 0.3333333333333333,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.1052631578947368,
+   "malignant_k": 2,
+   "malignant_n": 19,
+   "wilson_lo": 0.0293585600331968,
+   "wilson_hi": 0.3139408291190902,
+   "fcr_all_images": 0.0622452760281585
+  },
+  {
+   "model": "convnext_tiny",
+   "mapped_acc_test": 0.4444444444444444,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.3684210526315789,
+   "malignant_k": 7,
+   "malignant_n": 19,
+   "wilson_lo": 0.19149512641954,
+   "wilson_hi": 0.5896046699645555,
+   "fcr_all_images": 0.2456465357539829
+  },
+  {
+   "model": "swin_t",
+   "mapped_acc_test": 0.2222222222222222,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.4736842105263157,
+   "malignant_k": 9,
+   "malignant_n": 19,
+   "wilson_lo": 0.2732980503254139,
+   "wilson_hi": 0.6829219089514051,
+   "fcr_all_images": 0.2497221193034457
+  },
+  {
+   "model": "ensemble",
+   "mapped_acc_test": 0.3333333333333333,
+   "n_mapped_test": 9,
+   "malignant_detected": 0.4210526315789473,
+   "malignant_k": 8,
+   "malignant_n": 19,
+   "wilson_lo": 0.2314189116617153,
+   "wilson_hi": 0.637240966168742,
+   "fcr_all_images": 0.1176361615413116
+  }
+ ],
+ "dermacon/table_6_7_gate.csv": [
+  {
+   "seed": 0,
+   "accuracy": 0.6206060606060606,
+   "macro_f1": 0.4618167222663367,
+   "val_macro_f1": 0.45045238608109,
+   "neoplasm_recall": 0.5,
+   "threshold": 0.0191340111196041,
+   "test_neoplasms_passed": "8/8",
+   "non_neoplastic_passed": 0.7515299877600979
+  },
+  {
+   "seed": 1,
+   "accuracy": 0.6303030303030303,
+   "macro_f1": 0.5264908421252508,
+   "val_macro_f1": 0.4611728962821199,
+   "neoplasm_recall": 0.5,
+   "threshold": 0.026437034830451,
+   "test_neoplasms_passed": "7/8",
+   "non_neoplastic_passed": 0.5422276621787026
+  },
+  {
+   "seed": 2,
+   "accuracy": 0.6181818181818182,
+   "macro_f1": 0.5114238631050432,
+   "val_macro_f1": 0.4206899946109941,
+   "neoplasm_recall": 0.5,
+   "threshold": 0.0285012181848287,
+   "test_neoplasms_passed": "8/8",
+   "non_neoplastic_passed": 0.5373317013463892
+  }
+ ],
+ "dermacon/table_6_8_two_stage.json": {
+  "ensemble_alone": {
+   "fcr": 0.12239902080783353,
+   "patient_ci": [
+    0.09961581011767073,
+    0.14497802974922927
+   ],
+   "malignant_called": 2
+  },
+  "two_stage": {
+   "fcr_mean": 0.06976744186046512,
+   "fcr_std": 0.010670499249793564,
+   "per_seed": [
+    0.08200734394124846,
+    0.06487148102815178,
+    0.06242350061199511
+   ],
+   "patient_ci": [
+    0.05361276077356479,
+    0.08666248008324388
+   ],
+   "malignant_called_per_seed": [
+    2,
+    2,
+    2
+   ]
+  },
+  "change": {
+   "points": -0.05263157894736842,
+   "patient_ci": [
+    -0.06650557620817846,
+    -0.040616249878056135
+   ]
+  },
+  "n_test_malignant": 4,
+  "thresholds": {
+   "0": 0.01913401111960411,
+   "1": 0.02643703483045101,
+   "2": 0.028501218184828758
+  },
+  "gate_on_ham_val": {
+   "seed": 1,
+   "passed_all": 0.7506527415143603,
+   "passed_malignant": 0.8084415584415584
+  }
+ },
+ "dermacon/table_6_9_ddi.json": {
+  "status": "PENDING: DDI",
+  "reason": "data/ddi/ddi_metadata.csv not found"
+ },
+ "ham/confusion_matrix.csv": [
+  {
+   "Unnamed: 0": "akiec",
+   "akiec": 39,
+   "bcc": 2,
+   "bkl": 7,
+   "df": 1,
+   "mel": 2,
+   "nv": 1,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "bcc",
+   "akiec": 1,
+   "bcc": 63,
+   "bkl": 4,
+   "df": 2,
+   "mel": 1,
+   "nv": 0,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "bkl",
+   "akiec": 8,
+   "bcc": 6,
+   "bkl": 113,
+   "df": 0,
+   "mel": 17,
+   "nv": 23,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "df",
+   "akiec": 2,
+   "bcc": 0,
+   "bkl": 4,
+   "df": 13,
+   "mel": 1,
+   "nv": 0,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "mel",
+   "akiec": 1,
+   "bcc": 0,
+   "bkl": 11,
+   "df": 0,
+   "mel": 106,
+   "nv": 49,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "nv",
+   "akiec": 2,
+   "bcc": 7,
+   "bkl": 36,
+   "df": 1,
+   "mel": 38,
+   "nv": 920,
+   "vasc": 0
+  },
+  {
+   "Unnamed: 0": "vasc",
+   "akiec": 0,
+   "bcc": 1,
+   "bkl": 0,
+   "df": 0,
+   "mel": 1,
+   "nv": 2,
+   "vasc": 17
+  }
+ ],
+ "ham/ensemble_choice.json": {
+  "models": [
+   "efficientnet_b0",
+   "efficientnet_b0_long",
+   "resnet50",
+   "densenet121",
+   "convnext_tiny",
+   "swin_t"
+  ],
+  "candidates": {
+   "equal": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666
+   ],
+   "best3": [
+    0.0,
+    0.0,
+    0.3333333333333333,
+    0.0,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "weighted": [
+    0.07755848517487487,
+    0.15765542674660923,
+    0.026385339523285072,
+    0.13711576994457816,
+    0.5251635015771253,
+    0.07612147703352734
+   ]
+  },
+  "val_macro_f1": {
+   "equal": 0.7345720263440215,
+   "best3": 0.742039790975764,
+   "weighted": 0.7546963950949641
+  },
+  "chosen": "weighted",
+  "weights": [
+   0.07755848517487487,
+   0.15765542674660923,
+   0.026385339523285072,
+   0.13711576994457816,
+   0.5251635015771253,
+   0.07612147703352734
+  ]
+ },
+ "ham/ensemble_summary.json": {
+  "selected": "weighted",
+  "test": {
+   "accuracy": 0.8462050599201065,
+   "balanced_accuracy": 0.7606513800070492,
+   "macro_f1": 0.7711731811238707,
+   "melanoma_recall": 0.6347305389221557,
+   "malignant_sensitivity": 0.7413793103448276,
+   "malignant_specificity": 0.9315181518151815,
+   "malignant_auc": 0.9372624331398657,
+   "macro_auc": 0.9655834819590251
+  },
+  "test_ci": {
+   "accuracy": [
+    0.8234701795268208,
+    0.8697143386431252
+   ],
+   "macro_f1": [
+    0.7208512130285302,
+    0.8157169177505965
+   ],
+   "melanoma_recall": [
+    0.5414225650648041,
+    0.7330728595165689
+   ]
+  },
+  "val_macro_f1": {
+   "equal": 0.7345720263440215,
+   "best3": 0.742039790975764,
+   "weighted": 0.7546963950949641
+  }
+ },
+ "ham/table_3_1_split.csv": [
+  {
+   "dx": "akiec",
+   "train": 222,
+   "val": 53,
+   "test": 52,
+   "total": 327
+  },
+  {
+   "dx": "bcc",
+   "train": 361,
+   "val": 82,
+   "test": 71,
+   "total": 514
+  },
+  {
+   "dx": "bkl",
+   "train": 772,
+   "val": 160,
+   "test": 167,
+   "total": 1099
+  },
+  {
+   "dx": "df",
+   "train": 71,
+   "val": 24,
+   "test": 20,
+   "total": 115
+  },
+  {
+   "dx": "mel",
+   "train": 773,
+   "val": 173,
+   "test": 167,
+   "total": 1113
+  },
+  {
+   "dx": "nv",
+   "train": 4683,
+   "val": 1018,
+   "test": 1004,
+   "total": 6705
+  },
+  {
+   "dx": "vasc",
+   "train": 99,
+   "val": 22,
+   "test": 21,
+   "total": 142
+  },
+  {
+   "dx": "images",
+   "train": 6981,
+   "val": 1532,
+   "test": 1502,
+   "total": 10015
+  },
+  {
+   "dx": "lesions",
+   "train": 5229,
+   "val": 1120,
+   "test": 1121,
+   "total": 7470
+  },
+  {
+   "dx": "malignant",
+   "train": 1356,
+   "val": 308,
+   "test": 290,
+   "total": 1954
+  }
+ ],
+ "ham/table_6_16_missed_cancers.csv": [
+  {
+   "class": "mel",
+   "test_images": 167,
+   "called_benign": 60,
+   "miss_rate": 0.3592814371257485,
+   "wilson_lo": 0.2904307097755336,
+   "wilson_hi": 0.4344604243334502
+  },
+  {
+   "class": "bcc",
+   "test_images": 71,
+   "called_benign": 6,
+   "miss_rate": 0.0845070422535211,
+   "wilson_lo": 0.0393065074809028,
+   "wilson_hi": 0.1723603830111933
+  },
+  {
+   "class": "akiec",
+   "test_images": 52,
+   "called_benign": 9,
+   "miss_rate": 0.173076923076923,
+   "wilson_lo": 0.0938247434596526,
+   "wilson_hi": 0.2973086423590291
+  }
+ ],
+ "ham/table_6_1_models.csv": [
+  {
+   "model": "EfficientNet-B0",
+   "key": "efficientnet_b0",
+   "params_m": 4.016515,
+   "val_f1": 0.669002037786456,
+   "accuracy": 0.8249001331557922,
+   "balanced_accuracy": 0.6761754064403274,
+   "macro_f1": 0.7078828232320978,
+   "melanoma_recall": 0.5988023952095808,
+   "malignant_sensitivity": 0.6689655172413793,
+   "malignant_specificity": 0.92986798679868,
+   "malignant_auc": 0.91765392056447,
+   "macro_auc": 0.9351327914639368,
+   "ms_per_img": 27.10802793502808
+  },
+  {
+   "model": "EfficientNet-B0 (long)",
+   "key": "efficientnet_b0_long",
+   "params_m": 4.016515,
+   "val_f1": 0.669002037786456,
+   "accuracy": 0.8249001331557922,
+   "balanced_accuracy": 0.6761754064403274,
+   "macro_f1": 0.7078828232320978,
+   "melanoma_recall": 0.5988023952095808,
+   "malignant_sensitivity": 0.6689655172413793,
+   "malignant_specificity": 0.92986798679868,
+   "malignant_auc": 0.91765392056447,
+   "macro_auc": 0.9351327914639368,
+   "ms_per_img": 26.744017601013184
+  },
+  {
+   "model": "ResNet50",
+   "key": "resnet50",
+   "params_m": 23.522375,
+   "val_f1": 0.6888029846634055,
+   "accuracy": 0.8328894806924101,
+   "balanced_accuracy": 0.6958632959737254,
+   "macro_f1": 0.7186386851872439,
+   "melanoma_recall": 0.5868263473053892,
+   "malignant_sensitivity": 0.6689655172413793,
+   "malignant_specificity": 0.9455445544554456,
+   "malignant_auc": 0.9057414362125868,
+   "macro_auc": 0.9463391153154816,
+   "ms_per_img": 20.066628456115723
+  },
+  {
+   "model": "DenseNet121",
+   "key": "densenet121",
+   "params_m": 6.961031,
+   "val_f1": 0.7069887730669783,
+   "accuracy": 0.8029294274300932,
+   "balanced_accuracy": 0.6642281960746413,
+   "macro_f1": 0.6804397153413545,
+   "melanoma_recall": 0.6526946107784432,
+   "malignant_sensitivity": 0.7206896551724138,
+   "malignant_specificity": 0.8927392739273927,
+   "malignant_auc": 0.9100091043587116,
+   "macro_auc": 0.9450412945796484,
+   "ms_per_img": 49.98479604721069
+  },
+  {
+   "model": "ConvNeXt-Tiny",
+   "key": "convnext_tiny",
+   "params_m": 27.825511,
+   "val_f1": 0.7250959761222934,
+   "accuracy": 0.8268974700399467,
+   "balanced_accuracy": 0.7590782669612975,
+   "macro_f1": 0.7364275692401865,
+   "melanoma_recall": 0.5808383233532934,
+   "malignant_sensitivity": 0.7172413793103448,
+   "malignant_specificity": 0.9207920792079208,
+   "malignant_auc": 0.9092978263343576,
+   "macro_auc": 0.9454364486585348,
+   "ms_per_img": 19.99849796295166
+  },
+  {
+   "model": "Swin-T",
+   "key": "swin_t",
+   "params_m": 27.524737,
+   "val_f1": 0.6911748361109072,
+   "accuracy": 0.8255659121171771,
+   "balanced_accuracy": 0.6674628293754603,
+   "macro_f1": 0.69926888572269,
+   "melanoma_recall": 0.5868263473053892,
+   "malignant_sensitivity": 0.6931034482758621,
+   "malignant_specificity": 0.938118811881188,
+   "malignant_auc": 0.9083674746785024,
+   "macro_auc": 0.9415853516995056,
+   "ms_per_img": 40.02389192581177
+  },
+  {
+   "model": "Ensemble, equal weights",
+   "key": "ens_equal",
+   "params_m": 93.866684,
+   "val_f1": 0.7345720263440215,
+   "accuracy": 0.8455392809587217,
+   "balanced_accuracy": 0.7313328413202366,
+   "macro_f1": 0.7599155925640401,
+   "melanoma_recall": 0.6107784431137725,
+   "malignant_sensitivity": 0.7241379310344828,
+   "malignant_specificity": 0.9405940594059404,
+   "malignant_auc": 0.9384772960054628,
+   "macro_auc": 0.964870778041343,
+   "ms_per_img": 183.9258599281311
+  },
+  {
+   "model": "Ensemble, best 3",
+   "key": "ens_best3",
+   "params_m": 78.872623,
+   "val_f1": 0.742039790975764,
+   "accuracy": 0.8475366178428761,
+   "balanced_accuracy": 0.753134441717019,
+   "macro_f1": 0.7698929965367055,
+   "melanoma_recall": 0.5868263473053892,
+   "malignant_sensitivity": 0.7103448275862069,
+   "malignant_specificity": 0.948019801980198,
+   "malignant_auc": 0.9369608512575396,
+   "macro_auc": 0.9634623996928322,
+   "ms_per_img": 80.08901834487915
+  },
+  {
+   "model": "Ensemble, weighted (selected)",
+   "key": "ens_weighted",
+   "params_m": 93.866684,
+   "val_f1": 0.7546963950949641,
+   "accuracy": 0.8462050599201065,
+   "balanced_accuracy": 0.7606513800070492,
+   "macro_f1": 0.7711731811238707,
+   "melanoma_recall": 0.6347305389221557,
+   "malignant_sensitivity": 0.7413793103448276,
+   "malignant_specificity": 0.9315181518151816,
+   "malignant_auc": 0.9372624331398656,
+   "macro_auc": 0.9655834819590252,
+   "ms_per_img": 183.9258599281311
+  }
+ ],
+ "ham/table_6_2_per_class.csv": [
+  {
+   "class": "akiec",
+   "precision": 0.7358490566037735,
+   "recall": 0.75,
+   "specificity": 0.9903448275862068,
+   "f1": 0.7428571428571428,
+   "auc": 0.9772148541114056,
+   "test_images": 52
+  },
+  {
+   "class": "bcc",
+   "precision": 0.7974683544303798,
+   "recall": 0.8873239436619719,
+   "specificity": 0.9888190076869322,
+   "f1": 0.8400000000000001,
+   "auc": 0.9773230578439188,
+   "test_images": 71
+  },
+  {
+   "class": "bkl",
+   "precision": 0.6457142857142857,
+   "recall": 0.6766467065868264,
+   "specificity": 0.9535580524344568,
+   "f1": 0.6608187134502923,
+   "auc": 0.9495301531767923,
+   "test_images": 167
+  },
+  {
+   "class": "df",
+   "precision": 0.7647058823529411,
+   "recall": 0.65,
+   "specificity": 0.9973009446693656,
+   "f1": 0.7027027027027027,
+   "auc": 0.9899122807017544,
+   "test_images": 20
+  },
+  {
+   "class": "mel",
+   "precision": 0.6385542168674698,
+   "recall": 0.6347305389221557,
+   "specificity": 0.9550561797752808,
+   "f1": 0.6366366366366367,
+   "auc": 0.9217833994931486,
+   "test_images": 167
+  },
+  {
+   "class": "nv",
+   "precision": 0.9246231155778896,
+   "recall": 0.9163346613545816,
+   "specificity": 0.8493975903614458,
+   "f1": 0.9204602301150576,
+   "auc": 0.9573073169170708,
+   "test_images": 1004
+  },
+  {
+   "class": "vasc",
+   "precision": 1.0,
+   "recall": 0.8095238095238095,
+   "specificity": 1.0,
+   "f1": 0.8947368421052632,
+   "auc": 0.9860133114690846,
+   "test_images": 21
+  }
+ ],
+ "sanity_ham.json": [
+  {
+   "check": "no lesion in train and val",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "no lesion in train and test",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "no lesion in val and test",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "split covers all 10,015 images",
+   "passed": true,
+   "detail": "10015"
+  },
+  {
+   "check": "ensemble choice reproduced from validation",
+   "passed": true,
+   "detail": "weighted"
+  },
+  {
+   "check": "six HAM10000 models trained and evaluated on the full test split",
+   "passed": true,
+   "detail": "1502"
+  }
+ ],
+ "sanity_indian.json": [
+  {
+   "check": "no patient in DermaCon-IN train and val",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "no patient in DermaCon-IN train and test",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "no patient in DermaCon-IN val and test",
+   "passed": true,
+   "detail": "0"
+  },
+  {
+   "check": "DermaCon-IN test split contains malignant images",
+   "passed": true,
+   "detail": "4"
+  },
+  {
+   "check": "study_imb_* runs complete (15 expected)",
+   "passed": true,
+   "detail": "15"
+  },
+  {
+   "check": "study_skin_* runs complete (3 expected)",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "check": "study_crop_* runs complete (3 expected)",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "check": "unet_* runs complete (3 expected)",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "check": "gate_* runs complete (3 expected)",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "check": "imbalance setup reproduced from validation",
+   "passed": true,
+   "detail": "focal"
+  },
+  {
+   "check": "gate thresholds stored for 3 seeds",
+   "passed": true,
+   "detail": "{'0': 0.01913401111960411, '1': 0.02643703483045101, '2': 0.028501218184828758}"
+  },
+  {
+   "check": "FCR denominator = non-neoplastic test images",
+   "passed": true,
+   "detail": "817"
+  },
+  {
+   "check": "label mapping file written",
+   "passed": true,
+   "detail": "configs/dermacon_mapping.csv"
+  },
+  {
+   "check": "every study checkpoint was trained with seed 0, 1 or 2",
+   "passed": true,
+   "detail": "study_*.pth"
+  },
+  {
+   "check": "report numbers file written",
+   "passed": true,
+   "detail": "report_numbers.json"
+  },
+  {
+   "check": "not a smoke run",
+   "passed": true,
+   "detail": "SMOKE=False"
+  }
+ ],
+ "studies/imbalance_selected.json": {
+  "selected": "focal",
+  "val": {
+   "none": [
+    0.6868366951379232,
+    0.5664739884393063
+   ],
+   "sqrt": [
+    0.6790621479378346,
+    0.6801541425818883
+   ],
+   "inverse": [
+    0.6429677242556583,
+    0.7186897880539499
+   ],
+   "focal": [
+    0.6882302076636903,
+    0.5722543352601156
+   ],
+   "sampler": [
+    0.6725447096120419,
+    0.7013487475915222
+   ]
+  }
+ },
+ "studies/robustness_all.json": [
+  {
+   "model": "efficientnet_b0",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.7078828232,
+   "malignant_sensitivity": 0.6689655172,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6463748661,
+    0.7493307235
+   ],
+   "mal_sens_ci": [
+    0.5954394061,
+    0.7343053173
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.7078828232,
+   "malignant_sensitivity": 0.6689655172,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6463748661,
+    0.7493307235
+   ],
+   "mal_sens_ci": [
+    0.5954394061,
+    0.7343053173
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.7186386852,
+   "malignant_sensitivity": 0.6689655172,
+   "accuracy": 0.8328894807,
+   "macro_f1_ci": [
+    0.6588201716,
+    0.7684383858
+   ],
+   "mal_sens_ci": [
+    0.6018734065,
+    0.7323806159
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.6804397153,
+   "malignant_sensitivity": 0.7206896552,
+   "accuracy": 0.8029294274,
+   "macro_f1_ci": [
+    0.6242054241,
+    0.7340922259
+   ],
+   "mal_sens_ci": [
+    0.644359263,
+    0.7851111003
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.7364275692,
+   "malignant_sensitivity": 0.7172413793,
+   "accuracy": 0.82689747,
+   "macro_f1_ci": [
+    0.684039234,
+    0.7752888563
+   ],
+   "mal_sens_ci": [
+    0.6498053505,
+    0.7829821594
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.6992688857,
+   "malignant_sensitivity": 0.6931034483,
+   "accuracy": 0.8255659121,
+   "macro_f1_ci": [
+    0.6373694955,
+    0.742259773
+   ],
+   "mal_sens_ci": [
+    0.6253630221,
+    0.772480101
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "clean",
+   "severity": 0,
+   "level": null,
+   "macro_f1": 0.7711731811,
+   "malignant_sensitivity": 0.7413793103,
+   "accuracy": 0.8462050599,
+   "macro_f1_ci": [
+    0.7209660872,
+    0.8156016408
+   ],
+   "mal_sens_ci": [
+    0.6677357456,
+    0.8102221243
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.6970227355,
+   "malignant_sensitivity": 0.6344827586,
+   "accuracy": 0.8135818908,
+   "macro_f1_ci": [
+    0.6353810794,
+    0.7388485699
+   ],
+   "mal_sens_ci": [
+    0.5676672132,
+    0.7001020408
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.6970227355,
+   "malignant_sensitivity": 0.6344827586,
+   "accuracy": 0.8135818908,
+   "macro_f1_ci": [
+    0.6353810794,
+    0.7388485699
+   ],
+   "mal_sens_ci": [
+    0.5676672132,
+    0.7001020408
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.7007513058,
+   "malignant_sensitivity": 0.6068965517,
+   "accuracy": 0.8235685752,
+   "macro_f1_ci": [
+    0.6383517635,
+    0.74966731
+   ],
+   "mal_sens_ci": [
+    0.5257644592,
+    0.6774388883
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.6774379274,
+   "malignant_sensitivity": 0.7206896552,
+   "accuracy": 0.7902796272,
+   "macro_f1_ci": [
+    0.6154605653,
+    0.7257104364
+   ],
+   "mal_sens_ci": [
+    0.6496888646,
+    0.7849199826
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.741246217,
+   "malignant_sensitivity": 0.7,
+   "accuracy": 0.8308921438,
+   "macro_f1_ci": [
+    0.6911977326,
+    0.7791942998
+   ],
+   "mal_sens_ci": [
+    0.6289092885,
+    0.768745189
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.696216898,
+   "malignant_sensitivity": 0.6586206897,
+   "accuracy": 0.8315579228,
+   "macro_f1_ci": [
+    0.6264813603,
+    0.7476867687
+   ],
+   "mal_sens_ci": [
+    0.5911543443,
+    0.7328858474
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "brightness",
+   "severity": 1,
+   "level": 0.85,
+   "macro_f1": 0.7536731744,
+   "malignant_sensitivity": 0.7034482759,
+   "accuracy": 0.8395472703,
+   "macro_f1_ci": [
+    0.7008548721,
+    0.7984793568
+   ],
+   "mal_sens_ci": [
+    0.6317453386,
+    0.7717018274
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.6797270976,
+   "malignant_sensitivity": 0.6,
+   "accuracy": 0.810252996,
+   "macro_f1_ci": [
+    0.6139860532,
+    0.7176092171
+   ],
+   "mal_sens_ci": [
+    0.5215876382,
+    0.6643162021
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.6797270976,
+   "malignant_sensitivity": 0.6,
+   "accuracy": 0.810252996,
+   "macro_f1_ci": [
+    0.6139860532,
+    0.7176092171
+   ],
+   "mal_sens_ci": [
+    0.5215876382,
+    0.6643162021
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.6833376624,
+   "malignant_sensitivity": 0.5310344828,
+   "accuracy": 0.810252996,
+   "macro_f1_ci": [
+    0.6220359623,
+    0.7328201566
+   ],
+   "mal_sens_ci": [
+    0.4465127297,
+    0.5948648752
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.6497632951,
+   "malignant_sensitivity": 0.7034482759,
+   "accuracy": 0.7782956059,
+   "macro_f1_ci": [
+    0.5853019861,
+    0.713138207
+   ],
+   "mal_sens_ci": [
+    0.6385292261,
+    0.7719065423
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.7237161085,
+   "malignant_sensitivity": 0.6206896552,
+   "accuracy": 0.8162450067,
+   "macro_f1_ci": [
+    0.6736461085,
+    0.7627792966
+   ],
+   "mal_sens_ci": [
+    0.544320731,
+    0.6857331447
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.6943824109,
+   "malignant_sensitivity": 0.6068965517,
+   "accuracy": 0.82689747,
+   "macro_f1_ci": [
+    0.6244247872,
+    0.743675287
+   ],
+   "mal_sens_ci": [
+    0.5259475989,
+    0.6722845995
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "brightness",
+   "severity": 2,
+   "level": 0.7,
+   "macro_f1": 0.7327315559,
+   "malignant_sensitivity": 0.6344827586,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6770738505,
+    0.7789599826
+   ],
+   "mal_sens_ci": [
+    0.5534015194,
+    0.7095767812
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6429726434,
+   "malignant_sensitivity": 0.4931034483,
+   "accuracy": 0.8002663116,
+   "macro_f1_ci": [
+    0.5767061405,
+    0.685428183
+   ],
+   "mal_sens_ci": [
+    0.4213739568,
+    0.5603357465
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6429726434,
+   "malignant_sensitivity": 0.4931034483,
+   "accuracy": 0.8002663116,
+   "macro_f1_ci": [
+    0.5767061405,
+    0.685428183
+   ],
+   "mal_sens_ci": [
+    0.4213739568,
+    0.5603357465
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6415527736,
+   "malignant_sensitivity": 0.4482758621,
+   "accuracy": 0.7916111851,
+   "macro_f1_ci": [
+    0.5695423859,
+    0.7016716174
+   ],
+   "mal_sens_ci": [
+    0.3692580729,
+    0.5132729281
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6379914036,
+   "malignant_sensitivity": 0.6724137931,
+   "accuracy": 0.7676431425,
+   "macro_f1_ci": [
+    0.5760464907,
+    0.7028483942
+   ],
+   "mal_sens_ci": [
+    0.5981274517,
+    0.7385483871
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.689661629,
+   "malignant_sensitivity": 0.5586206897,
+   "accuracy": 0.7996005326,
+   "macro_f1_ci": [
+    0.6352995192,
+    0.7372008097
+   ],
+   "mal_sens_ci": [
+    0.4768599766,
+    0.6269980315
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6506273744,
+   "malignant_sensitivity": 0.5172413793,
+   "accuracy": 0.8155792277,
+   "macro_f1_ci": [
+    0.5781684697,
+    0.7019257972
+   ],
+   "mal_sens_ci": [
+    0.4356187708,
+    0.5846360759
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "brightness",
+   "severity": 3,
+   "level": 0.55,
+   "macro_f1": 0.6728100506,
+   "malignant_sensitivity": 0.5379310345,
+   "accuracy": 0.8082556591,
+   "macro_f1_ci": [
+    0.6138510337,
+    0.7212271886
+   ],
+   "mal_sens_ci": [
+    0.4588794532,
+    0.609322754
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.4892773946,
+   "malignant_sensitivity": 0.2586206897,
+   "accuracy": 0.7529960053,
+   "macro_f1_ci": [
+    0.4268973334,
+    0.5439439928
+   ],
+   "mal_sens_ci": [
+    0.2024338027,
+    0.3116353047
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.4892773946,
+   "malignant_sensitivity": 0.2586206897,
+   "accuracy": 0.7529960053,
+   "macro_f1_ci": [
+    0.4268973334,
+    0.5439439928
+   ],
+   "mal_sens_ci": [
+    0.2024338027,
+    0.3116353047
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.5808660021,
+   "malignant_sensitivity": 0.3172413793,
+   "accuracy": 0.7709720373,
+   "macro_f1_ci": [
+    0.5119568554,
+    0.6435330338
+   ],
+   "mal_sens_ci": [
+    0.2488846215,
+    0.3894473792
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.5699822739,
+   "malignant_sensitivity": 0.5931034483,
+   "accuracy": 0.7643142477,
+   "macro_f1_ci": [
+    0.505903345,
+    0.6320822296
+   ],
+   "mal_sens_ci": [
+    0.509301621,
+    0.6741032817
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.671813112,
+   "malignant_sensitivity": 0.4655172414,
+   "accuracy": 0.7876165113,
+   "macro_f1_ci": [
+    0.6063828849,
+    0.7182579765
+   ],
+   "mal_sens_ci": [
+    0.3921467556,
+    0.5396524836
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.6356425132,
+   "malignant_sensitivity": 0.4379310345,
+   "accuracy": 0.8062583222,
+   "macro_f1_ci": [
+    0.5597213978,
+    0.6910348815
+   ],
+   "mal_sens_ci": [
+    0.3620369055,
+    0.5095816079
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "brightness",
+   "severity": 4,
+   "level": 0.4,
+   "macro_f1": 0.6575849033,
+   "malignant_sensitivity": 0.4413793103,
+   "accuracy": 0.7916111851,
+   "macro_f1_ci": [
+    0.5944380541,
+    0.7046809396
+   ],
+   "mal_sens_ci": [
+    0.3774365503,
+    0.5086260205
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.3875495526,
+   "malignant_sensitivity": 0.0827586207,
+   "accuracy": 0.7217043941,
+   "macro_f1_ci": [
+    0.3276073225,
+    0.4497834731
+   ],
+   "mal_sens_ci": [
+    0.0529991999,
+    0.1156796303
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.3875495526,
+   "malignant_sensitivity": 0.0827586207,
+   "accuracy": 0.7217043941,
+   "macro_f1_ci": [
+    0.3276073225,
+    0.4497834731
+   ],
+   "mal_sens_ci": [
+    0.0529991999,
+    0.1156796303
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.4750041167,
+   "malignant_sensitivity": 0.1862068966,
+   "accuracy": 0.7543275632,
+   "macro_f1_ci": [
+    0.408577332,
+    0.534584311
+   ],
+   "mal_sens_ci": [
+    0.1347829333,
+    0.2380250547
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.5053794041,
+   "malignant_sensitivity": 0.3655172414,
+   "accuracy": 0.7450066578,
+   "macro_f1_ci": [
+    0.4344573526,
+    0.5725219998
+   ],
+   "mal_sens_ci": [
+    0.2987946752,
+    0.4453579352
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.6089736468,
+   "malignant_sensitivity": 0.3827586207,
+   "accuracy": 0.7623169108,
+   "macro_f1_ci": [
+    0.5416825297,
+    0.6560513189
+   ],
+   "mal_sens_ci": [
+    0.3123798077,
+    0.4468907563
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.6009984645,
+   "malignant_sensitivity": 0.3551724138,
+   "accuracy": 0.7876165113,
+   "macro_f1_ci": [
+    0.5276732301,
+    0.648553822
+   ],
+   "mal_sens_ci": [
+    0.2800877564,
+    0.4291295538
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "brightness",
+   "severity": 5,
+   "level": 0.3,
+   "macro_f1": 0.6113720454,
+   "malignant_sensitivity": 0.3379310345,
+   "accuracy": 0.7769640479,
+   "macro_f1_ci": [
+    0.5444525589,
+    0.6662788232
+   ],
+   "mal_sens_ci": [
+    0.2668922164,
+    0.4025812985
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.7072844529,
+   "malignant_sensitivity": 0.6896551724,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6447819354,
+    0.7463965783
+   ],
+   "mal_sens_ci": [
+    0.6145148026,
+    0.7597576143
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.7072844529,
+   "malignant_sensitivity": 0.6896551724,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6447819354,
+    0.7463965783
+   ],
+   "mal_sens_ci": [
+    0.6145148026,
+    0.7597576143
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.7290654724,
+   "malignant_sensitivity": 0.6724137931,
+   "accuracy": 0.8342210386,
+   "macro_f1_ci": [
+    0.6713342435,
+    0.7783612381
+   ],
+   "mal_sens_ci": [
+    0.5996953405,
+    0.7402882455
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.6987896987,
+   "malignant_sensitivity": 0.7310344828,
+   "accuracy": 0.810252996,
+   "macro_f1_ci": [
+    0.6413785777,
+    0.7442367853
+   ],
+   "mal_sens_ci": [
+    0.6628737383,
+    0.7994059388
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.7378205595,
+   "malignant_sensitivity": 0.7448275862,
+   "accuracy": 0.8315579228,
+   "macro_f1_ci": [
+    0.6871676635,
+    0.7776570325
+   ],
+   "mal_sens_ci": [
+    0.6737551714,
+    0.8132308083
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.716525095,
+   "malignant_sensitivity": 0.6965517241,
+   "accuracy": 0.8308921438,
+   "macro_f1_ci": [
+    0.6524233405,
+    0.7598820535
+   ],
+   "mal_sens_ci": [
+    0.6300533986,
+    0.7689001544
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "gaussian_blur",
+   "severity": 1,
+   "level": 0.5,
+   "macro_f1": 0.7645942565,
+   "malignant_sensitivity": 0.7344827586,
+   "accuracy": 0.8428761651,
+   "macro_f1_ci": [
+    0.7157562319,
+    0.8062234562
+   ],
+   "mal_sens_ci": [
+    0.6666118421,
+    0.8061281859
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.7053559786,
+   "malignant_sensitivity": 0.7206896552,
+   "accuracy": 0.8222370173,
+   "macro_f1_ci": [
+    0.6547861781,
+    0.7447005859
+   ],
+   "mal_sens_ci": [
+    0.6521407517,
+    0.7962495803
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.7053559786,
+   "malignant_sensitivity": 0.7206896552,
+   "accuracy": 0.8222370173,
+   "macro_f1_ci": [
+    0.6547861781,
+    0.7447005859
+   ],
+   "mal_sens_ci": [
+    0.6521407517,
+    0.7962495803
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.6925144407,
+   "malignant_sensitivity": 0.675862069,
+   "accuracy": 0.8209054594,
+   "macro_f1_ci": [
+    0.6307257901,
+    0.7470030364
+   ],
+   "mal_sens_ci": [
+    0.6005181163,
+    0.7362122503
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.7247273652,
+   "malignant_sensitivity": 0.7655172414,
+   "accuracy": 0.8242343542,
+   "macro_f1_ci": [
+    0.6612994201,
+    0.7663659541
+   ],
+   "mal_sens_ci": [
+    0.6973036884,
+    0.8280765699
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.7110239034,
+   "malignant_sensitivity": 0.7482758621,
+   "accuracy": 0.8242343542,
+   "macro_f1_ci": [
+    0.6457192348,
+    0.7586446754
+   ],
+   "mal_sens_ci": [
+    0.6749371343,
+    0.8111543919
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.6987562985,
+   "malignant_sensitivity": 0.7172413793,
+   "accuracy": 0.8209054594,
+   "macro_f1_ci": [
+    0.6372016079,
+    0.7407552259
+   ],
+   "mal_sens_ci": [
+    0.6557886319,
+    0.7879921014
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "gaussian_blur",
+   "severity": 2,
+   "level": 1.0,
+   "macro_f1": 0.7266520617,
+   "malignant_sensitivity": 0.7586206897,
+   "accuracy": 0.8368841545,
+   "macro_f1_ci": [
+    0.669688726,
+    0.7738774956
+   ],
+   "mal_sens_ci": [
+    0.6874811747,
+    0.8258613273
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6756362001,
+   "malignant_sensitivity": 0.6310344828,
+   "accuracy": 0.8035952064,
+   "macro_f1_ci": [
+    0.614438345,
+    0.7192603035
+   ],
+   "mal_sens_ci": [
+    0.5541065,
+    0.706310276
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6756362001,
+   "malignant_sensitivity": 0.6310344828,
+   "accuracy": 0.8035952064,
+   "macro_f1_ci": [
+    0.614438345,
+    0.7192603035
+   ],
+   "mal_sens_ci": [
+    0.5541065,
+    0.706310276
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6803227056,
+   "malignant_sensitivity": 0.6724137931,
+   "accuracy": 0.8082556591,
+   "macro_f1_ci": [
+    0.6180583676,
+    0.7281320311
+   ],
+   "mal_sens_ci": [
+    0.5840857054,
+    0.7420378904
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6837900291,
+   "malignant_sensitivity": 0.7103448276,
+   "accuracy": 0.8195739015,
+   "macro_f1_ci": [
+    0.6214622506,
+    0.7375944116
+   ],
+   "mal_sens_ci": [
+    0.6403574065,
+    0.788160948
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6834274937,
+   "malignant_sensitivity": 0.7620689655,
+   "accuracy": 0.8175765646,
+   "macro_f1_ci": [
+    0.6285010048,
+    0.7283582473
+   ],
+   "mal_sens_ci": [
+    0.6812438396,
+    0.8307868663
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.6714080571,
+   "malignant_sensitivity": 0.7137931034,
+   "accuracy": 0.809587217,
+   "macro_f1_ci": [
+    0.617839307,
+    0.7197851296
+   ],
+   "mal_sens_ci": [
+    0.6405327275,
+    0.7761115763
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "gaussian_blur",
+   "severity": 3,
+   "level": 1.5,
+   "macro_f1": 0.7120227034,
+   "malignant_sensitivity": 0.7620689655,
+   "accuracy": 0.8322237017,
+   "macro_f1_ci": [
+    0.6551529465,
+    0.7620271646
+   ],
+   "mal_sens_ci": [
+    0.6845523262,
+    0.8236507474
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6127972634,
+   "malignant_sensitivity": 0.5344827586,
+   "accuracy": 0.7796271638,
+   "macro_f1_ci": [
+    0.5541423322,
+    0.6597075679
+   ],
+   "mal_sens_ci": [
+    0.4533843757,
+    0.612703533
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6127972634,
+   "malignant_sensitivity": 0.5344827586,
+   "accuracy": 0.7796271638,
+   "macro_f1_ci": [
+    0.5541423322,
+    0.6597075679
+   ],
+   "mal_sens_ci": [
+    0.4533843757,
+    0.612703533
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6363176263,
+   "malignant_sensitivity": 0.5931034483,
+   "accuracy": 0.7916111851,
+   "macro_f1_ci": [
+    0.5726835542,
+    0.6840176822
+   ],
+   "mal_sens_ci": [
+    0.4983701441,
+    0.656633512
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6517738109,
+   "malignant_sensitivity": 0.6310344828,
+   "accuracy": 0.8062583222,
+   "macro_f1_ci": [
+    0.5838208271,
+    0.7051525865
+   ],
+   "mal_sens_ci": [
+    0.539873029,
+    0.6989247312
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6478313321,
+   "malignant_sensitivity": 0.7655172414,
+   "accuracy": 0.8009320905,
+   "macro_f1_ci": [
+    0.5868565685,
+    0.6965741321
+   ],
+   "mal_sens_ci": [
+    0.6915029131,
+    0.8232463846
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6277364335,
+   "malignant_sensitivity": 0.6586206897,
+   "accuracy": 0.7902796272,
+   "macro_f1_ci": [
+    0.5682541848,
+    0.6816147282
+   ],
+   "mal_sens_ci": [
+    0.5885788737,
+    0.727688172
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "gaussian_blur",
+   "severity": 4,
+   "level": 2.0,
+   "macro_f1": 0.6683776144,
+   "malignant_sensitivity": 0.7275862069,
+   "accuracy": 0.810918775,
+   "macro_f1_ci": [
+    0.6030813157,
+    0.7174931208
+   ],
+   "mal_sens_ci": [
+    0.6479782553,
+    0.7880907451
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.4288411221,
+   "malignant_sensitivity": 0.2034482759,
+   "accuracy": 0.7163781625,
+   "macro_f1_ci": [
+    0.369871688,
+    0.4806570759
+   ],
+   "mal_sens_ci": [
+    0.1491243867,
+    0.2568350981
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.4288411221,
+   "malignant_sensitivity": 0.2034482759,
+   "accuracy": 0.7163781625,
+   "macro_f1_ci": [
+    0.369871688,
+    0.4806570759
+   ],
+   "mal_sens_ci": [
+    0.1491243867,
+    0.2568350981
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.4525013598,
+   "malignant_sensitivity": 0.224137931,
+   "accuracy": 0.7177097204,
+   "macro_f1_ci": [
+    0.3825228038,
+    0.5098074306
+   ],
+   "mal_sens_ci": [
+    0.152897464,
+    0.2842482541
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.5611043157,
+   "malignant_sensitivity": 0.4724137931,
+   "accuracy": 0.7723035952,
+   "macro_f1_ci": [
+    0.4917107923,
+    0.6205787832
+   ],
+   "mal_sens_ci": [
+    0.3846757763,
+    0.5450441818
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.6085353077,
+   "malignant_sensitivity": 0.6551724138,
+   "accuracy": 0.7842876165,
+   "macro_f1_ci": [
+    0.5431405245,
+    0.6647673652
+   ],
+   "mal_sens_ci": [
+    0.5737476128,
+    0.7177663806
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.5557030712,
+   "malignant_sensitivity": 0.524137931,
+   "accuracy": 0.7649800266,
+   "macro_f1_ci": [
+    0.4912579266,
+    0.6065253726
+   ],
+   "mal_sens_ci": [
+    0.437462154,
+    0.5918491787
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "gaussian_blur",
+   "severity": 5,
+   "level": 3.0,
+   "macro_f1": 0.5870614352,
+   "malignant_sensitivity": 0.5620689655,
+   "accuracy": 0.776298269,
+   "macro_f1_ci": [
+    0.5184990002,
+    0.6444423299
+   ],
+   "mal_sens_ci": [
+    0.4758345278,
+    0.6263132752
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.6992596012,
+   "malignant_sensitivity": 0.6620689655,
+   "accuracy": 0.8222370173,
+   "macro_f1_ci": [
+    0.6366565712,
+    0.73815761
+   ],
+   "mal_sens_ci": [
+    0.5984244063,
+    0.7285741971
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.6992596012,
+   "malignant_sensitivity": 0.6620689655,
+   "accuracy": 0.8222370173,
+   "macro_f1_ci": [
+    0.6366565712,
+    0.73815761
+   ],
+   "mal_sens_ci": [
+    0.5984244063,
+    0.7285741971
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.7123566405,
+   "malignant_sensitivity": 0.6344827586,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6490398204,
+    0.7615003612
+   ],
+   "mal_sens_ci": [
+    0.5583359412,
+    0.6961671439
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.6919603059,
+   "malignant_sensitivity": 0.7137931034,
+   "accuracy": 0.809587217,
+   "macro_f1_ci": [
+    0.6412310744,
+    0.7349406495
+   ],
+   "mal_sens_ci": [
+    0.6414390588,
+    0.7844601947
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.7365229458,
+   "malignant_sensitivity": 0.7275862069,
+   "accuracy": 0.8295605859,
+   "macro_f1_ci": [
+    0.6871069104,
+    0.7763570504
+   ],
+   "mal_sens_ci": [
+    0.6603372764,
+    0.7954088426
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.7015525479,
+   "malignant_sensitivity": 0.6862068966,
+   "accuracy": 0.8302263648,
+   "macro_f1_ci": [
+    0.638230854,
+    0.7433688122
+   ],
+   "mal_sens_ci": [
+    0.6203159436,
+    0.7570005824
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "jpeg_quality",
+   "severity": 1,
+   "level": 80.0,
+   "macro_f1": 0.7752115498,
+   "malignant_sensitivity": 0.7413793103,
+   "accuracy": 0.8428761651,
+   "macro_f1_ci": [
+    0.7295287203,
+    0.8165472836
+   ],
+   "mal_sens_ci": [
+    0.6778300562,
+    0.8086249573
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.6843732495,
+   "malignant_sensitivity": 0.6379310345,
+   "accuracy": 0.8155792277,
+   "macro_f1_ci": [
+    0.6292224506,
+    0.7218152488
+   ],
+   "mal_sens_ci": [
+    0.5659608477,
+    0.7015587977
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.6843732495,
+   "malignant_sensitivity": 0.6379310345,
+   "accuracy": 0.8155792277,
+   "macro_f1_ci": [
+    0.6292224506,
+    0.7218152488
+   ],
+   "mal_sens_ci": [
+    0.5659608477,
+    0.7015587977
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.7150508521,
+   "malignant_sensitivity": 0.6379310345,
+   "accuracy": 0.8262316911,
+   "macro_f1_ci": [
+    0.6579733542,
+    0.7631301803
+   ],
+   "mal_sens_ci": [
+    0.5655240957,
+    0.7061578043
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.6840489052,
+   "malignant_sensitivity": 0.6862068966,
+   "accuracy": 0.8042609854,
+   "macro_f1_ci": [
+    0.6292051611,
+    0.7323721845
+   ],
+   "mal_sens_ci": [
+    0.6178445038,
+    0.7563620072
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.7364389934,
+   "malignant_sensitivity": 0.7172413793,
+   "accuracy": 0.8235685752,
+   "macro_f1_ci": [
+    0.6888571616,
+    0.776140555
+   ],
+   "mal_sens_ci": [
+    0.6445773786,
+    0.7931521872
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.7155293835,
+   "malignant_sensitivity": 0.6896551724,
+   "accuracy": 0.8302263648,
+   "macro_f1_ci": [
+    0.6502287175,
+    0.7593442972
+   ],
+   "mal_sens_ci": [
+    0.6179518187,
+    0.7656442577
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "jpeg_quality",
+   "severity": 2,
+   "level": 60.0,
+   "macro_f1": 0.7570594142,
+   "malignant_sensitivity": 0.7413793103,
+   "accuracy": 0.8375499334,
+   "macro_f1_ci": [
+    0.7099273652,
+    0.7974790247
+   ],
+   "mal_sens_ci": [
+    0.6686708604,
+    0.8091917109
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.6613779689,
+   "malignant_sensitivity": 0.624137931,
+   "accuracy": 0.7942743009,
+   "macro_f1_ci": [
+    0.6048519247,
+    0.7065863186
+   ],
+   "mal_sens_ci": [
+    0.5566227909,
+    0.6800410984
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.6613779689,
+   "malignant_sensitivity": 0.624137931,
+   "accuracy": 0.7942743009,
+   "macro_f1_ci": [
+    0.6048519247,
+    0.7065863186
+   ],
+   "mal_sens_ci": [
+    0.5566227909,
+    0.6800410984
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.7007168095,
+   "malignant_sensitivity": 0.6310344828,
+   "accuracy": 0.8115845539,
+   "macro_f1_ci": [
+    0.6326230767,
+    0.7468647027
+   ],
+   "mal_sens_ci": [
+    0.5544166462,
+    0.6963981185
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.6814382251,
+   "malignant_sensitivity": 0.6379310345,
+   "accuracy": 0.7942743009,
+   "macro_f1_ci": [
+    0.6226848809,
+    0.7284803779
+   ],
+   "mal_sens_ci": [
+    0.5659533514,
+    0.708097447
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.7165066168,
+   "malignant_sensitivity": 0.7103448276,
+   "accuracy": 0.8135818908,
+   "macro_f1_ci": [
+    0.6656109141,
+    0.7568312888
+   ],
+   "mal_sens_ci": [
+    0.6413195568,
+    0.7804106548
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.7039889435,
+   "malignant_sensitivity": 0.6862068966,
+   "accuracy": 0.8195739015,
+   "macro_f1_ci": [
+    0.6396795981,
+    0.7468801619
+   ],
+   "mal_sens_ci": [
+    0.6243991426,
+    0.7451174529
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "jpeg_quality",
+   "severity": 3,
+   "level": 40.0,
+   "macro_f1": 0.7314139358,
+   "malignant_sensitivity": 0.7034482759,
+   "accuracy": 0.8249001332,
+   "macro_f1_ci": [
+    0.6723172547,
+    0.7786959907
+   ],
+   "mal_sens_ci": [
+    0.6338787695,
+    0.7730812325
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.5924320365,
+   "malignant_sensitivity": 0.524137931,
+   "accuracy": 0.7789613848,
+   "macro_f1_ci": [
+    0.5360505153,
+    0.6406189655
+   ],
+   "mal_sens_ci": [
+    0.4600885608,
+    0.592372321
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.5924320365,
+   "malignant_sensitivity": 0.524137931,
+   "accuracy": 0.7789613848,
+   "macro_f1_ci": [
+    0.5360505153,
+    0.6406189655
+   ],
+   "mal_sens_ci": [
+    0.4600885608,
+    0.592372321
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.6385872295,
+   "malignant_sensitivity": 0.5620689655,
+   "accuracy": 0.7729693742,
+   "macro_f1_ci": [
+    0.5718915056,
+    0.6901097731
+   ],
+   "mal_sens_ci": [
+    0.4842481428,
+    0.6223663254
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.6518404061,
+   "malignant_sensitivity": 0.5413793103,
+   "accuracy": 0.7656458056,
+   "macro_f1_ci": [
+    0.5894898101,
+    0.6971019774
+   ],
+   "mal_sens_ci": [
+    0.4693466096,
+    0.6125167521
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.6597386525,
+   "malignant_sensitivity": 0.6724137931,
+   "accuracy": 0.7749667111,
+   "macro_f1_ci": [
+    0.5970116852,
+    0.7049963542
+   ],
+   "mal_sens_ci": [
+    0.6058043317,
+    0.739200561
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.6871745683,
+   "malignant_sensitivity": 0.7137931034,
+   "accuracy": 0.8069241012,
+   "macro_f1_ci": [
+    0.624992582,
+    0.7411916963
+   ],
+   "mal_sens_ci": [
+    0.6448388306,
+    0.7765768194
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "jpeg_quality",
+   "severity": 4,
+   "level": 20.0,
+   "macro_f1": 0.7069278728,
+   "malignant_sensitivity": 0.6827586207,
+   "accuracy": 0.8089214381,
+   "macro_f1_ci": [
+    0.6441232735,
+    0.7532490928
+   ],
+   "mal_sens_ci": [
+    0.6135697976,
+    0.7524868957
+   ]
+  },
+  {
+   "model": "efficientnet_b0",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.4526461457,
+   "malignant_sensitivity": 0.2310344828,
+   "accuracy": 0.7463382157,
+   "macro_f1_ci": [
+    0.3803140518,
+    0.5152374009
+   ],
+   "mal_sens_ci": [
+    0.1732816905,
+    0.2868676576
+   ]
+  },
+  {
+   "model": "efficientnet_b0_long",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.4526461457,
+   "malignant_sensitivity": 0.2310344828,
+   "accuracy": 0.7463382157,
+   "macro_f1_ci": [
+    0.3803140518,
+    0.5152374009
+   ],
+   "mal_sens_ci": [
+    0.1732816905,
+    0.2868676576
+   ]
+  },
+  {
+   "model": "resnet50",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.4878504461,
+   "malignant_sensitivity": 0.3310344828,
+   "accuracy": 0.7283621838,
+   "macro_f1_ci": [
+    0.4154861585,
+    0.5517399353
+   ],
+   "mal_sens_ci": [
+    0.2576244845,
+    0.3804281132
+   ]
+  },
+  {
+   "model": "densenet121",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.5171686747,
+   "malignant_sensitivity": 0.3620689655,
+   "accuracy": 0.6584553928,
+   "macro_f1_ci": [
+    0.4585217095,
+    0.5794462417
+   ],
+   "mal_sens_ci": [
+    0.2927611521,
+    0.4232142857
+   ]
+  },
+  {
+   "model": "convnext_tiny",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.5616055381,
+   "malignant_sensitivity": 0.4620689655,
+   "accuracy": 0.7197070573,
+   "macro_f1_ci": [
+    0.4980285642,
+    0.6176565248
+   ],
+   "mal_sens_ci": [
+    0.3856576367,
+    0.5166800004
+   ]
+  },
+  {
+   "model": "swin_t",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.6138797363,
+   "malignant_sensitivity": 0.5655172414,
+   "accuracy": 0.7816245007,
+   "macro_f1_ci": [
+    0.5403406904,
+    0.6682754897
+   ],
+   "mal_sens_ci": [
+    0.4968736245,
+    0.6299424591
+   ]
+  },
+  {
+   "model": "ensemble",
+   "corruption": "jpeg_quality",
+   "severity": 5,
+   "level": 10.0,
+   "macro_f1": 0.5717344286,
+   "malignant_sensitivity": 0.4034482759,
+   "accuracy": 0.7436750999,
+   "macro_f1_ci": [
+    0.501561227,
+    0.6279670485
+   ],
+   "mal_sens_ci": [
+    0.3238830048,
+    0.4620691236
+   ]
+  }
+ ],
+ "studies/table_6_10_imbalance.csv": [
+  {
+   "strategy": "a) None",
+   "val_macro_f1": 0.6868366951379232,
+   "val_mel_recall": 0.5664739884393063,
+   "test_macro_f1": "0.671 \u00b1 0.018 [0.612, 0.718]",
+   "test_mel_recall": "0.501 \u00b1 0.052 [0.410, 0.587]",
+   "test_mal_sens": "0.590 \u00b1 0.041 [0.524, 0.651]",
+   "test_accuracy": "0.818 \u00b1 0.009"
+  },
+  {
+   "strategy": "b) sqrt balanced weights (default)",
+   "val_macro_f1": 0.6790621479378346,
+   "val_mel_recall": 0.6801541425818883,
+   "test_macro_f1": "0.679 \u00b1 0.005 [0.628, 0.719]",
+   "test_mel_recall": "0.657 \u00b1 0.059 [0.575, 0.741]",
+   "test_mal_sens": "0.730 \u00b1 0.044 [0.674, 0.783]",
+   "test_accuracy": "0.793 \u00b1 0.007"
+  },
+  {
+   "strategy": "c) Inverse frequency",
+   "val_macro_f1": 0.6429677242556583,
+   "val_mel_recall": 0.7186897880539499,
+   "test_macro_f1": "0.652 \u00b1 0.027 [0.604, 0.693]",
+   "test_mel_recall": "0.669 \u00b1 0.038 [0.595, 0.737]",
+   "test_mal_sens": "0.751 \u00b1 0.007 [0.702, 0.795]",
+   "test_accuracy": "0.755 \u00b1 0.046"
+  },
+  {
+   "strategy": "d) Focal loss (selected)",
+   "val_macro_f1": 0.6882302076636903,
+   "val_mel_recall": 0.5722543352601156,
+   "test_macro_f1": "0.675 \u00b1 0.020 [0.619, 0.718]",
+   "test_mel_recall": "0.539 \u00b1 0.036 [0.453, 0.622]",
+   "test_mal_sens": "0.621 \u00b1 0.040 [0.560, 0.677]",
+   "test_accuracy": "0.817 \u00b1 0.009"
+  },
+  {
+   "strategy": "e) Weighted sampler",
+   "val_macro_f1": 0.6725447096120419,
+   "val_mel_recall": 0.7013487475915222,
+   "test_macro_f1": "0.689 \u00b1 0.011 [0.635, 0.727]",
+   "test_mel_recall": "0.703 \u00b1 0.173 [0.631, 0.770]",
+   "test_mal_sens": "0.747 \u00b1 0.096 [0.697, 0.791]",
+   "test_accuracy": "0.755 \u00b1 0.049"
+  }
+ ],
+ "studies/table_6_10_imbalance.json": [
+  {
+   "strategy": "none",
+   "label": "a) None",
+   "val_macro_f1": 0.6868366951379232,
+   "val_mel_recall": 0.5664739884393063,
+   "test_accuracy": {
+    "mean": 0.818242343541944,
+    "std": 0.008655126498002652,
+    "ci": [
+     0.7953880742079495,
+     0.8387863955486047
+    ],
+    "per_seed": [
+     0.8135818908122503,
+     0.8282290279627164,
+     0.8129161118508655
+    ]
+   },
+   "test_balanced_accuracy": {
+    "mean": 0.6379767729351647,
+    "std": 0.013022999232285178,
+    "ci": [
+     0.5805837377621863,
+     0.6957085911172666
+    ],
+    "per_seed": [
+     0.6373122434744644,
+     0.6513193147360079,
+     0.6252987605950219
+    ]
+   },
+   "test_macro_f1": {
+    "mean": 0.6708911905446685,
+    "std": 0.017573899803598688,
+    "ci": [
+     0.6118130279601902,
+     0.7180018370696463
+    ],
+    "per_seed": [
+     0.6687374034340484,
+     0.6894427187204368,
+     0.6544934494795202
+    ]
+   },
+   "test_melanoma_recall": {
+    "mean": 0.500998003992016,
+    "std": 0.051626814995519195,
+    "ci": [
+     0.4103908188585609,
+     0.5870493605115907
+    ],
+    "per_seed": [
+     0.5568862275449101,
+     0.49101796407185627,
+     0.4550898203592814
+    ]
+   },
+   "test_malignant_sensitivity": {
+    "mean": 0.5896551724137931,
+    "std": 0.04065457283638483,
+    "ci": [
+     0.5238095238095238,
+     0.6511621863799283
+    ],
+    "per_seed": [
+     0.6241379310344828,
+     0.6,
+     0.5448275862068965
+    ]
+   },
+   "test_malignant_specificity": {
+    "mean": 0.9422442244224422,
+    "std": 0.015011060559950684,
+    "ci": [
+     0.927919291441686,
+     0.9549130880588788
+    ],
+    "per_seed": [
+     0.9249174917491749,
+     0.9504950495049505,
+     0.9513201320132013
+    ]
+   },
+   "test_malignant_auc": {
+    "mean": 0.9036313114070028,
+    "std": 0.008405972325250755,
+    "ci": [
+     0.8801891301711472,
+     0.9264090359692095
+    ],
+    "per_seed": [
+     0.9096705360191192,
+     0.8940309548196199,
+     0.9071924433822692
+    ]
+   }
+  },
+  {
+   "strategy": "sqrt",
+   "label": "b) sqrt balanced weights (default)",
+   "val_macro_f1": 0.6790621479378346,
+   "val_mel_recall": 0.6801541425818883,
+   "test_accuracy": {
+    "mean": 0.7929427430093209,
+    "std": 0.00732356857523303,
+    "ci": [
+     0.7714248584424023,
+     0.8140239249626172
+    ],
+    "per_seed": [
+     0.800266311584554,
+     0.7929427430093209,
+     0.7856191744340879
+    ]
+   },
+   "test_balanced_accuracy": {
+    "mean": 0.6804767183304096,
+    "std": 0.04319469903942486,
+    "ci": [
+     0.6326121180148793,
+     0.7338346431603161
+    ],
+    "per_seed": [
+     0.6684037849981529,
+     0.6446029805628604,
+     0.7284233894302157
+    ]
+   },
+   "test_macro_f1": {
+    "mean": 0.678780481554416,
+    "std": 0.005347944519115134,
+    "ci": [
+     0.6283840928075953,
+     0.7189184671190144
+    ],
+    "per_seed": [
+     0.6842681509101792,
+     0.6735841737653879,
+     0.6784891199876805
+    ]
+   },
+   "test_melanoma_recall": {
+    "mean": 0.6566866267465069,
+    "std": 0.05907644146486528,
+    "ci": [
+     0.5752643861514829,
+     0.7407784237726098
+    ],
+    "per_seed": [
+     0.6167664670658682,
+     0.7245508982035929,
+     0.6287425149700598
+    ]
+   },
+   "test_malignant_sensitivity": {
+    "mean": 0.7298850574712644,
+    "std": 0.04433862418847334,
+    "ci": [
+     0.6742876756666458,
+     0.7826164319975243
+    ],
+    "per_seed": [
+     0.6793103448275862,
+     0.7620689655172413,
+     0.7482758620689656
+    ]
+   },
+   "test_malignant_specificity": {
+    "mean": 0.8866886688668867,
+    "std": 0.015791944136364755,
+    "ci": [
+     0.8679706601466993,
+     0.904849604522334
+    ],
+    "per_seed": [
+     0.9042904290429042,
+     0.8737623762376238,
+     0.8820132013201321
+    ]
+   },
+   "test_malignant_auc": {
+    "mean": 0.9025018019043283,
+    "std": 0.009683251284589727,
+    "ci": [
+     0.87978402913536,
+     0.9240140032449703
+    ],
+    "per_seed": [
+     0.8914959599408216,
+     0.9097132127005803,
+     0.906296233071583
+    ]
+   }
+  },
+  {
+   "strategy": "inverse",
+   "label": "c) Inverse frequency",
+   "val_macro_f1": 0.6429677242556583,
+   "val_mel_recall": 0.7186897880539499,
+   "test_accuracy": {
+    "mean": 0.7554371948513094,
+    "std": 0.046204932008505555,
+    "ci": [
+     0.7320455670344149,
+     0.7777931034482759
+    ],
+    "per_seed": [
+     0.7869507323568575,
+     0.7023968042609854,
+     0.7769640479360852
+    ]
+   },
+   "test_balanced_accuracy": {
+    "mean": 0.7040851646349101,
+    "std": 0.011456707841561583,
+    "ci": [
+     0.6531139244334739,
+     0.7533352406448884
+    ],
+    "per_seed": [
+     0.6921502317945364,
+     0.7051105476747072,
+     0.7149947144354868
+    ]
+   },
+   "test_macro_f1": {
+    "mean": 0.6522301643551965,
+    "std": 0.026837110939375953,
+    "ci": [
+     0.6042441953096992,
+     0.6926476513436285
+    ],
+    "per_seed": [
+     0.6427821798556356,
+     0.6313947705551437,
+     0.6825135426548103
+    ]
+   },
+   "test_melanoma_recall": {
+    "mean": 0.6686626746506986,
+    "std": 0.038029059647220836,
+    "ci": [
+     0.5953653604875208,
+     0.7374405939633768
+    ],
+    "per_seed": [
+     0.7125748502994012,
+     0.6467065868263473,
+     0.6467065868263473
+    ]
+   },
+   "test_malignant_sensitivity": {
+    "mean": 0.7505747126436781,
+    "std": 0.007178158618848685,
+    "ci": [
+     0.7022051453743009,
+     0.7951985370950888
+    ],
+    "per_seed": [
+     0.7586206896551724,
+     0.7482758620689656,
+     0.7448275862068966
+    ]
+   },
+   "test_malignant_specificity": {
+    "mean": 0.8484598459845984,
+    "std": 0.03342687481680635,
+    "ci": [
+     0.8279917978458989,
+     0.8698529030208598
+    ],
+    "per_seed": [
+     0.8754125412541254,
+     0.8110561056105611,
+     0.8589108910891089
+    ]
+   },
+   "test_malignant_auc": {
+    "mean": 0.8840778043321574,
+    "std": 0.012318849907200962,
+    "ci": [
+     0.8606583325643485,
+     0.9052631455603809
+    ],
+    "per_seed": [
+     0.8880846705360192,
+     0.8702543530215092,
+     0.8938943894389437
+    ]
+   }
+  },
+  {
+   "strategy": "focal",
+   "label": "d) Focal loss",
+   "val_macro_f1": 0.6882302076636903,
+   "val_mel_recall": 0.5722543352601156,
+   "test_accuracy": {
+    "mean": 0.8166888592987128,
+    "std": 0.008560719716815808,
+    "ci": [
+     0.7959205105588874,
+     0.8386152254473124
+    ],
+    "per_seed": [
+     0.8202396804260985,
+     0.8229027962716379,
+     0.8069241011984021
+    ]
+   },
+   "test_balanced_accuracy": {
+    "mean": 0.6553281402246293,
+    "std": 0.0031983601140122067,
+    "ci": [
+     0.5960941457445573,
+     0.7154785886669066
+    ],
+    "per_seed": [
+     0.655066196452722,
+     0.6586494171922599,
+     0.6522688070289061
+    ]
+   },
+   "test_macro_f1": {
+    "mean": 0.6749330073910813,
+    "std": 0.019779581628883117,
+    "ci": [
+     0.6191505127051125,
+     0.718286195174727
+    ],
+    "per_seed": [
+     0.6670006351088492,
+     0.6974475075228465,
+     0.6603508795415484
+    ]
+   },
+   "test_melanoma_recall": {
+    "mean": 0.5389221556886228,
+    "std": 0.035928143712574856,
+    "ci": [
+     0.453139589169001,
+     0.6222463768115942
+    ],
+    "per_seed": [
+     0.5029940119760479,
+     0.5748502994011976,
+     0.5389221556886228
+    ]
+   },
+   "test_malignant_sensitivity": {
+    "mean": 0.6206896551724138,
+    "std": 0.03976745722300271,
+    "ci": [
+     0.5595622916580217,
+     0.6773881227408455
+    ],
+    "per_seed": [
+     0.5793103448275863,
+     0.6586206896551724,
+     0.6241379310344828
+    ]
+   },
+   "test_malignant_specificity": {
+    "mean": 0.935918591859186,
+    "std": 0.008822340446834631,
+    "ci": [
+     0.9216422407696814,
+     0.9493556616714722
+    ],
+    "per_seed": [
+     0.9455445544554455,
+     0.9282178217821783,
+     0.933993399339934
+    ]
+   },
+   "test_malignant_auc": {
+    "mean": 0.914688365388263,
+    "std": 0.004570047452410512,
+    "ci": [
+     0.8957794585753391,
+     0.9318576247294991
+    ],
+    "per_seed": [
+     0.909881074314328,
+     0.9152071241606919,
+     0.918976897689769
+    ]
+   }
+  },
+  {
+   "strategy": "sampler",
+   "label": "e) Weighted sampler",
+   "val_macro_f1": 0.6725447096120419,
+   "val_mel_recall": 0.7013487475915222,
+   "test_accuracy": {
+    "mean": 0.7547714158899246,
+    "std": 0.0485714538013274,
+    "ci": [
+     0.733113812429331,
+     0.7772019679014981
+    ],
+    "per_seed": [
+     0.7403462050599201,
+     0.715046604527297,
+     0.8089214380825566
+    ]
+   },
+   "test_balanced_accuracy": {
+    "mean": 0.6854496427370007,
+    "std": 0.00687764830626644,
+    "ci": [
+     0.631710325084133,
+     0.7454890733117026
+    ],
+    "per_seed": [
+     0.6775422458675495,
+     0.6900411909082897,
+     0.6887654914351631
+    ]
+   },
+   "test_macro_f1": {
+    "mean": 0.688819696401862,
+    "std": 0.010931264074108979,
+    "ci": [
+     0.6352702487761133,
+     0.7269266967209465
+    ],
+    "per_seed": [
+     0.6766758919468262,
+     0.691910232453229,
+     0.6978729648055306
+    ]
+   },
+   "test_melanoma_recall": {
+    "mean": 0.7025948103792414,
+    "std": 0.17317022935524132,
+    "ci": [
+     0.6312094907407407,
+     0.7696387019030998
+    ],
+    "per_seed": [
+     0.7365269461077845,
+     0.8562874251497006,
+     0.5149700598802395
+    ]
+   },
+   "test_malignant_sensitivity": {
+    "mean": 0.7471264367816092,
+    "std": 0.09583064067629747,
+    "ci": [
+     0.696934142872771,
+     0.7912530881571128
+    ],
+    "per_seed": [
+     0.7862068965517242,
+     0.8172413793103448,
+     0.6379310344827587
+    ]
+   },
+   "test_malignant_specificity": {
+    "mean": 0.8314081408140814,
+    "std": 0.08914073709444656,
+    "ci": [
+     0.8109398927625129,
+     0.8529951267291173
+    ],
+    "per_seed": [
+     0.8052805280528053,
+     0.7582508250825083,
+     0.9306930693069307
+    ]
+   },
+   "test_malignant_auc": {
+    "mean": 0.8904508554303706,
+    "std": 0.015218551504513149,
+    "ci": [
+     0.8693735001130076,
+     0.909195151789702
+    ],
+    "per_seed": [
+     0.8904944804825311,
+     0.8752105382952089,
+     0.9056475475133721
+    ]
+   }
+  }
+ ],
+ "studies/table_6_11_skin_tone.csv": [
+  {
+   "metric": "accuracy",
+   "Baseline (selected setup)": "0.817 \u00b1 0.009 [0.796, 0.839]",
+   "Augmented": "0.823 \u00b1 0.004 [0.802, 0.843]",
+   "difference [95% paired CI]": "+0.0060 [-0.0064, +0.0188]"
+  },
+  {
+   "metric": "balanced accuracy",
+   "Baseline (selected setup)": "0.655 \u00b1 0.003 [0.596, 0.715]",
+   "Augmented": "0.635 \u00b1 0.038 [0.585, 0.689]",
+   "difference [95% paired CI]": "-0.0204 [-0.0605, +0.0193]"
+  },
+  {
+   "metric": "macro f1",
+   "Baseline (selected setup)": "0.675 \u00b1 0.020 [0.619, 0.718]",
+   "Augmented": "0.667 \u00b1 0.019 [0.613, 0.709]",
+   "difference [95% paired CI]": "-0.0084 [-0.0404, +0.0236]"
+  },
+  {
+   "metric": "melanoma recall",
+   "Baseline (selected setup)": "0.539 \u00b1 0.036 [0.453, 0.622]",
+   "Augmented": "0.445 \u00b1 0.066 [0.365, 0.529]",
+   "difference [95% paired CI]": "-0.0938 [-0.1481, -0.0380]"
+  },
+  {
+   "metric": "malignant sensitivity",
+   "Baseline (selected setup)": "0.621 \u00b1 0.040 [0.560, 0.677]",
+   "Augmented": "0.585 \u00b1 0.040 [0.524, 0.642]",
+   "difference [95% paired CI]": "-0.0356 [-0.0739, +0.0048]"
+  },
+  {
+   "metric": "malignant specificity",
+   "Baseline (selected setup)": "0.936 \u00b1 0.009 [0.922, 0.949]",
+   "Augmented": "0.953 \u00b1 0.004 [0.943, 0.964]",
+   "difference [95% paired CI]": "+0.0171 [+0.0074, +0.0272]"
+  },
+  {
+   "metric": "malignant auc",
+   "Baseline (selected setup)": "0.915 \u00b1 0.005 [0.896, 0.932]",
+   "Augmented": "0.910 \u00b1 0.008 [0.889, 0.928]",
+   "difference [95% paired CI]": "-0.0051 [-0.0155, +0.0050]"
+  }
+ ],
+ "studies/table_6_11_skin_tone.json": {
+  "a": {
+   "accuracy": {
+    "mean": 0.8166888592987128,
+    "std": 0.008560719716815808,
+    "ci": [
+     0.7959205105588874,
+     0.8386152254473124
+    ],
+    "per_seed": [
+     0.8202396804260985,
+     0.8229027962716379,
+     0.8069241011984021
+    ]
+   },
+   "balanced_accuracy": {
+    "mean": 0.6553281402246293,
+    "std": 0.0031983601140122067,
+    "ci": [
+     0.5960941457445573,
+     0.7154785886669066
+    ],
+    "per_seed": [
+     0.655066196452722,
+     0.6586494171922599,
+     0.6522688070289061
+    ]
+   },
+   "macro_f1": {
+    "mean": 0.6749330073910813,
+    "std": 0.019779581628883117,
+    "ci": [
+     0.6191505127051125,
+     0.718286195174727
+    ],
+    "per_seed": [
+     0.6670006351088492,
+     0.6974475075228465,
+     0.6603508795415484
+    ]
+   },
+   "melanoma_recall": {
+    "mean": 0.5389221556886228,
+    "std": 0.035928143712574856,
+    "ci": [
+     0.453139589169001,
+     0.6222463768115942
+    ],
+    "per_seed": [
+     0.5029940119760479,
+     0.5748502994011976,
+     0.5389221556886228
+    ]
+   },
+   "malignant_sensitivity": {
+    "mean": 0.6206896551724138,
+    "std": 0.03976745722300271,
+    "ci": [
+     0.5595622916580217,
+     0.6773881227408455
+    ],
+    "per_seed": [
+     0.5793103448275863,
+     0.6586206896551724,
+     0.6241379310344828
+    ]
+   },
+   "malignant_specificity": {
+    "mean": 0.935918591859186,
+    "std": 0.008822340446834631,
+    "ci": [
+     0.9216422407696814,
+     0.9493556616714722
+    ],
+    "per_seed": [
+     0.9455445544554455,
+     0.9282178217821783,
+     0.933993399339934
+    ]
+   },
+   "malignant_auc": {
+    "mean": 0.914688365388263,
+    "std": 0.004570047452410512,
+    "ci": [
+     0.8957794585753391,
+     0.9318576247294991
+    ],
+    "per_seed": [
+     0.909881074314328,
+     0.9152071241606919,
+     0.918976897689769
+    ]
+   }
+  },
+  "b": {
+   "accuracy": {
+    "mean": 0.8226808699511762,
+    "std": 0.0036668245987257456,
+    "ci": [
+     0.8023051453786193,
+     0.8429516207920124
+    ],
+    "per_seed": [
+     0.8229027962716379,
+     0.8189081225033289,
+     0.8262316910785619
+    ]
+   },
+   "balanced_accuracy": {
+    "mean": 0.6348909551020948,
+    "std": 0.038160812593139234,
+    "ci": [
+     0.5845906118331342,
+     0.6887798949545662
+    ],
+    "per_seed": [
+     0.6010497241767297,
+     0.6273713182162278,
+     0.6762518229133269
+    ]
+   },
+   "macro_f1": {
+    "mean": 0.6665140089630855,
+    "std": 0.01924351990334791,
+    "ci": [
+     0.6133998022806354,
+     0.70872110217368
+    ],
+    "per_seed": [
+     0.6520702671814221,
+     0.6591123781946352,
+     0.6883593815131991
+    ]
+   },
+   "melanoma_recall": {
+    "mean": 0.44510978043912175,
+    "std": 0.06595892871001323,
+    "ci": [
+     0.3645673894557823,
+     0.5293520069483217
+    ],
+    "per_seed": [
+     0.3772455089820359,
+     0.4491017964071856,
+     0.5089820359281437
+    ]
+   },
+   "malignant_sensitivity": {
+    "mean": 0.5850574712643678,
+    "std": 0.03966766419939634,
+    "ci": [
+     0.5239692475603491,
+     0.6420624298844693
+    ],
+    "per_seed": [
+     0.5448275862068965,
+     0.5862068965517241,
+     0.6241379310344828
+    ]
+   },
+   "malignant_specificity": {
+    "mean": 0.952970297029703,
+    "std": 0.0037810030486434354,
+    "ci": [
+     0.9426781839341832,
+     0.9636372460041344
+    ],
+    "per_seed": [
+     0.9562706270627063,
+     0.9488448844884488,
+     0.9537953795379538
+    ]
+   },
+   "malignant_auc": {
+    "mean": 0.9096164788892681,
+    "std": 0.007856011394530774,
+    "ci": [
+     0.8892679227020784,
+     0.927692523082303
+    ],
+    "per_seed": [
+     0.9008706043018094,
+     0.9119039490155912,
+     0.9160748833504039
+    ]
+   }
+  },
+  "diff": {
+   "accuracy": {
+    "diff": 0.005992010652463353,
+    "ci": [
+     -0.006377062619767485,
+     0.01880698989984059
+    ]
+   },
+   "balanced_accuracy": {
+    "diff": -0.02043718512253445,
+    "ci": [
+     -0.06048216009436742,
+     0.019322406726838964
+    ]
+   },
+   "macro_f1": {
+    "diff": -0.00841899842799576,
+    "ci": [
+     -0.04043002501754479,
+     0.023594402738376083
+    ]
+   },
+   "melanoma_recall": {
+    "diff": -0.09381237524950103,
+    "ci": [
+     -0.14814814814814814,
+     -0.038018036912751706
+    ]
+   },
+   "malignant_sensitivity": {
+    "diff": -0.03563218390804601,
+    "ci": [
+     -0.07394402875586834,
+     0.004779835151326802
+    ]
+   },
+   "malignant_specificity": {
+    "diff": 0.017051705170517018,
+    "ci": [
+     0.007376706779763331,
+     0.027211867405921936
+    ]
+   },
+   "malignant_auc": {
+    "diff": -0.005071886498994926,
+    "ci": [
+     -0.015502986729190796,
+     0.0050266195003129755
+    ]
+   }
+  }
+ },
+ "studies/table_6_12_segmentation.csv": [
+  {
+   "method": "U-Net (3 seeds)",
+   "dice": "0.949 \u00b1 0.001",
+   "dice_ci": "(0.9447466548667592, 0.9524368815510548)",
+   "iou": "0.908 \u00b1 0.002",
+   "iou_ci": "(0.9021452968621557, 0.9141561646849299)"
+  },
+  {
+   "method": "Otsu baseline (no training)",
+   "dice": "0.691",
+   "dice_ci": "(0.676214177384722, 0.7043314549032708)",
+   "iou": "0.571",
+   "iou_ci": "(0.556874053399115, 0.5855741137859471)"
+  }
+ ],
+ "studies/table_6_13_crop.csv": [
+  {
+   "metric": "accuracy",
+   "Full image": "0.817 \u00b1 0.009 [0.796, 0.839]",
+   "Crop": "0.822 \u00b1 0.005 [0.801, 0.842]",
+   "difference [95% paired CI]": "+0.0055 [-0.0094, +0.0201]"
+  },
+  {
+   "metric": "balanced accuracy",
+   "Full image": "0.655 \u00b1 0.003 [0.596, 0.715]",
+   "Crop": "0.691 \u00b1 0.013 [0.637, 0.744]",
+   "difference [95% paired CI]": "+0.0357 [-0.0046, +0.0774]"
+  },
+  {
+   "metric": "macro f1",
+   "Full image": "0.675 \u00b1 0.020 [0.619, 0.718]",
+   "Crop": "0.723 \u00b1 0.008 [0.671, 0.763]",
+   "difference [95% paired CI]": "+0.0485 [+0.0119, +0.0876]"
+  },
+  {
+   "metric": "melanoma recall",
+   "Full image": "0.539 \u00b1 0.036 [0.453, 0.622]",
+   "Crop": "0.699 \u00b1 0.057 [0.611, 0.777]",
+   "difference [95% paired CI]": "+0.1597 [+0.0980, +0.2244]"
+  },
+  {
+   "metric": "malignant sensitivity",
+   "Full image": "0.621 \u00b1 0.040 [0.560, 0.677]",
+   "Crop": "0.729 \u00b1 0.042 [0.668, 0.786]",
+   "difference [95% paired CI]": "+0.1080 [+0.0652, +0.1518]"
+  },
+  {
+   "metric": "malignant specificity",
+   "Full image": "0.936 \u00b1 0.009 [0.922, 0.949]",
+   "Crop": "0.907 \u00b1 0.011 [0.890, 0.923]",
+   "difference [95% paired CI]": "-0.0289 [-0.0428, -0.0153]"
+  },
+  {
+   "metric": "malignant auc",
+   "Full image": "0.915 \u00b1 0.005 [0.896, 0.932]",
+   "Crop": "0.925 \u00b1 0.008 [0.905, 0.943]",
+   "difference [95% paired CI]": "+0.0104 [-0.0024, +0.0221]"
+  }
+ ],
+ "studies/table_6_13_crop.json": {
+  "a": {
+   "accuracy": {
+    "mean": 0.8166888592987128,
+    "std": 0.008560719716815808,
+    "ci": [
+     0.7959205105588874,
+     0.8386152254473124
+    ],
+    "per_seed": [
+     0.8202396804260985,
+     0.8229027962716379,
+     0.8069241011984021
+    ]
+   },
+   "balanced_accuracy": {
+    "mean": 0.6553281402246293,
+    "std": 0.0031983601140122067,
+    "ci": [
+     0.5960941457445573,
+     0.7154785886669066
+    ],
+    "per_seed": [
+     0.655066196452722,
+     0.6586494171922599,
+     0.6522688070289061
+    ]
+   },
+   "macro_f1": {
+    "mean": 0.6749330073910813,
+    "std": 0.019779581628883117,
+    "ci": [
+     0.6191505127051125,
+     0.718286195174727
+    ],
+    "per_seed": [
+     0.6670006351088492,
+     0.6974475075228465,
+     0.6603508795415484
+    ]
+   },
+   "melanoma_recall": {
+    "mean": 0.5389221556886228,
+    "std": 0.035928143712574856,
+    "ci": [
+     0.453139589169001,
+     0.6222463768115942
+    ],
+    "per_seed": [
+     0.5029940119760479,
+     0.5748502994011976,
+     0.5389221556886228
+    ]
+   },
+   "malignant_sensitivity": {
+    "mean": 0.6206896551724138,
+    "std": 0.03976745722300271,
+    "ci": [
+     0.5595622916580217,
+     0.6773881227408455
+    ],
+    "per_seed": [
+     0.5793103448275863,
+     0.6586206896551724,
+     0.6241379310344828
+    ]
+   },
+   "malignant_specificity": {
+    "mean": 0.935918591859186,
+    "std": 0.008822340446834631,
+    "ci": [
+     0.9216422407696814,
+     0.9493556616714722
+    ],
+    "per_seed": [
+     0.9455445544554455,
+     0.9282178217821783,
+     0.933993399339934
+    ]
+   },
+   "malignant_auc": {
+    "mean": 0.914688365388263,
+    "std": 0.004570047452410512,
+    "ci": [
+     0.8957794585753391,
+     0.9318576247294991
+    ],
+    "per_seed": [
+     0.909881074314328,
+     0.9152071241606919,
+     0.918976897689769
+    ]
+   }
+  },
+  "b": {
+   "accuracy": {
+    "mean": 0.822237017310253,
+    "std": 0.004801000366796298,
+    "ci": [
+     0.8010938173522644,
+     0.8416984026235057
+    ],
+    "per_seed": [
+     0.818242343541944,
+     0.8209054593874834,
+     0.8275632490013316
+    ]
+   },
+   "balanced_accuracy": {
+    "mean": 0.6910697671453416,
+    "std": 0.013412625684088008,
+    "ci": [
+     0.6371301178466023,
+     0.7436709171290403
+    ],
+    "per_seed": [
+     0.6763603168574639,
+     0.7026224181953438,
+     0.6942265663832173
+    ]
+   },
+   "macro_f1": {
+    "mean": 0.7234446030593572,
+    "std": 0.008006114530580278,
+    "ci": [
+     0.6710550243584351,
+     0.763212017654529
+    ],
+    "per_seed": [
+     0.7148040876733391,
+     0.7249181099247103,
+     0.7306116115800219
+    ]
+   },
+   "melanoma_recall": {
+    "mean": 0.6986027944111776,
+    "std": 0.05659659432637853,
+    "ci": [
+     0.6105416564216049,
+     0.7765467171717171
+    ],
+    "per_seed": [
+     0.6347305389221557,
+     0.7425149700598802,
+     0.718562874251497
+    ]
+   },
+   "malignant_sensitivity": {
+    "mean": 0.7287356321839081,
+    "std": 0.04213862708005368,
+    "ci": [
+     0.6678971656544004,
+     0.7857182276884264
+    ],
+    "per_seed": [
+     0.6827586206896552,
+     0.7655172413793103,
+     0.7379310344827587
+    ]
+   },
+   "malignant_specificity": {
+    "mean": 0.907040704070407,
+    "std": 0.010641112278412072,
+    "ci": [
+     0.8898202907913938,
+     0.9233194550404779
+    ],
+    "per_seed": [
+     0.9158415841584159,
+     0.8952145214521452,
+     0.9100660066006601
+    ]
+   },
+   "malignant_auc": {
+    "mean": 0.9250673343196388,
+    "std": 0.0077468705315636354,
+    "ci": [
+     0.9049929747728003,
+     0.9429791142525145
+    ],
+    "per_seed": [
+     0.9161374758165471,
+     0.9299874815067714,
+     0.929077045635598
+    ]
+   }
+  },
+  "diff": {
+   "accuracy": {
+    "diff": 0.005548158011540183,
+    "ci": [
+     -0.009437098490214003,
+     0.02009947750255712
+    ]
+   },
+   "balanced_accuracy": {
+    "diff": 0.035741626920712366,
+    "ci": [
+     -0.004629470183495307,
+     0.07738801084092951
+    ]
+   },
+   "macro_f1": {
+    "diff": 0.0485115956682759,
+    "ci": [
+     0.01185374371119006,
+     0.08763146757837371
+    ]
+   },
+   "melanoma_recall": {
+    "diff": 0.15968063872255478,
+    "ci": [
+     0.09800759013282742,
+     0.22440953654188955
+    ]
+   },
+   "malignant_sensitivity": {
+    "diff": 0.10804597701149432,
+    "ci": [
+     0.06523970381079468,
+     0.1518132707487221
+    ]
+   },
+   "malignant_specificity": {
+    "diff": -0.028877887788778978,
+    "ci": [
+     -0.04278821128757179,
+     -0.01526521074547134
+    ]
+   },
+   "malignant_auc": {
+    "diff": 0.010378968931375798,
+    "ci": [
+     -0.002362762078728048,
+     0.0221353854374269
+    ]
+   }
+  }
+ },
+ "studies/table_6_14_robustness.csv": [
+  {
+   "Unnamed: 0": "clean (severity 0)",
+   "efficientnet_b0": 0.7078828232320978,
+   "efficientnet_b0_long": 0.7078828232320978,
+   "resnet50": 0.7186386851872439,
+   "densenet121": 0.6804397153413545,
+   "convnext_tiny": 0.7364275692401865,
+   "swin_t": 0.69926888572269,
+   "ensemble": 0.7711731811238707
+  },
+  {
+   "Unnamed: 0": "brightness",
+   "efficientnet_b0": 0.3875495525921378,
+   "efficientnet_b0_long": 0.3875495525921378,
+   "resnet50": 0.4750041166538293,
+   "densenet121": 0.5053794040970095,
+   "convnext_tiny": 0.6089736467685979,
+   "swin_t": 0.6009984644546422,
+   "ensemble": 0.6113720453565328
+  },
+  {
+   "Unnamed: 0": "gaussian_blur",
+   "efficientnet_b0": 0.4288411220565234,
+   "efficientnet_b0_long": 0.4288411220565234,
+   "resnet50": 0.4525013597791337,
+   "densenet121": 0.5611043156832843,
+   "convnext_tiny": 0.608535307715912,
+   "swin_t": 0.5557030711758353,
+   "ensemble": 0.5870614352459446
+  },
+  {
+   "Unnamed: 0": "jpeg_quality",
+   "efficientnet_b0": 0.4526461457267757,
+   "efficientnet_b0_long": 0.4526461457267757,
+   "resnet50": 0.4878504460683787,
+   "densenet121": 0.5171686746610544,
+   "convnext_tiny": 0.5616055381090229,
+   "swin_t": 0.6138797362861916,
+   "ensemble": 0.5717344286285974
+  }
+ ],
+ "studies/table_6_15_explanations.csv": [
+  {
+   "model": "efficientnet_b0",
+   "deletion": 0.4893405138049275,
+   "deletion_ci": "(0.45564339217251293, 0.5202662264841962)",
+   "insertion": 0.7213224625587463,
+   "insertion_ci": "(0.6990180358905094, 0.7431794441582454)",
+   "random_deletion": 0.6151294983178377,
+   "random_insertion": 0.6165873238630593
+  },
+  {
+   "model": "resnet50",
+   "deletion": 0.5420711862668395,
+   "deletion_ci": "(0.4977341881001493, 0.5844229515711896)",
+   "insertion": 0.7056345096603036,
+   "insertion_ci": "(0.6773160897735983, 0.734219524327559)",
+   "random_deletion": 0.6658771348744631,
+   "random_insertion": 0.6670518649742008
+  },
+  {
+   "model": "densenet121",
+   "deletion": 0.3981713340431452,
+   "deletion_ci": "(0.36390443856327154, 0.4323996026663893)",
+   "insertion": 0.6930893324315548,
+   "insertion_ci": "(0.6678491980466086, 0.7185889728201281)",
+   "random_deletion": 0.609173125103116,
+   "random_insertion": 0.6076855834387243
+  },
+  {
+   "model": "convnext_tiny",
+   "deletion": 0.5303621242567896,
+   "deletion_ci": "(0.4909173006697884, 0.5660267880144599)",
+   "insertion": 0.7558256883919239,
+   "insertion_ci": "(0.7336548069547165, 0.7769055790988426)",
+   "random_deletion": 0.6498651320487261,
+   "random_insertion": 0.6505433982983232
+  },
+  {
+   "model": "swin_t",
+   "deletion": 0.591651815129444,
+   "deletion_ci": "(0.5497414759195912, 0.630451518411352)",
+   "insertion": 0.7334950411319733,
+   "insertion_ci": "(0.7104574280973563, 0.7527974251148252)",
+   "random_deletion": 0.663600144777447,
+   "random_insertion": 0.6654912918619812
+  },
+  {
+   "model": "study_setup_seed0",
+   "deletion": 0.5286146716028451,
+   "deletion_ci": "(0.4922166682232741, 0.562413721986415)",
+   "insertion": 0.7711346085369587,
+   "insertion_ci": "(0.7395745217324037, 0.8005307138512996)",
+   "random_deletion": 0.7215580643713474,
+   "random_insertion": 0.7228413442522288
+  }
+ ],
+ "timings.json": {
+  "01_data": 3.0,
+  "14_imbalance_study": 97.8,
+  "15_skin_tone_augmentation": 30.1,
+  "16_segmentation": 114.0,
+  "02-07_models": 64.8,
+  "08_ensemble": 0.2,
+  "09_final_comparison": 2.3,
+  "17_robustness": 29.8,
+  "18_explainability": 7.6,
+  "10_indian_data_audit": 5.1,
+  "11_indian_zero_shot": 6.6,
+  "12_stage1_gate": 10.1,
+  "13_ddi_evaluation": 0.0,
+  "19_sanity_checks": 0.1
+ },
+ "v2/convnext_small_meta_isic/run.json": {
+  "tag": "convnext_small_meta_isic",
+  "arch": "convnext_small.fb_in22k_ft_in1k_384",
+  "meta": true,
+  "isic2019": true,
+  "size": 384,
+  "best_epoch": 15,
+  "minutes": 168.6
+ },
+ "v2/ensemble/ensemble_config.json": {
+  "members": [
+   "tf_efficientnet_b4_meta_isic",
+   "tf_efficientnetv2_s_meta_isic"
+  ],
+  "weights": [
+   0.5516113352286256,
+   0.4483886647713745
+  ],
+  "bias": [
+   1.3322676295501878e-15,
+   -0.1499999999999988,
+   1.3322676295501878e-15,
+   1.3322676295501878e-15,
+   -0.19999999999999885,
+   1.3322676295501878e-15,
+   0.800000000000002
+  ],
+  "binary_threshold": 0.49000000000000005,
+  "binary_threshold_sens90": 0.14
+ },
+ "v2/ensemble/ensemble_metrics.json": {
+  "ensemble_members": {
+   "tf_efficientnet_b4_meta_isic": 0.5516,
+   "tf_efficientnetv2_s_meta_isic": 0.4484
+  },
+  "class_bias": {
+   "akiec": 0.0,
+   "bcc": -0.15,
+   "bkl": 0.0,
+   "df": 0.0,
+   "mel": -0.2,
+   "nv": 0.0,
+   "vasc": 0.8
+  },
+  "test_mean_ensemble_no_calibration": {
+   "accuracy": 0.8994673768308922,
+   "balanced_accuracy": 0.7923765649647073,
+   "macro_f1": 0.8232780707143014,
+   "weighted_f1": 0.8963342648960315,
+   "macro_roc_auc": 0.9819406897578096,
+   "bin_accuracy": 0.9300932090545939,
+   "bin_sensitivity": 0.7896551724137931,
+   "bin_specificity": 0.9636963696369637,
+   "bin_roc_auc": 0.9569022419483327,
+   "bin_threshold": 0.5
+  },
+  "test_ensemble_calibrated": {
+   "accuracy": 0.903462050599201,
+   "balanced_accuracy": 0.8098934834440721,
+   "macro_f1": 0.8311701260932798,
+   "weighted_f1": 0.8995896627190678,
+   "macro_roc_auc": 0.98187869065678,
+   "bin_accuracy": 0.9314247669773635,
+   "bin_sensitivity": 0.7655172413793103,
+   "bin_specificity": 0.9711221122112211,
+   "bin_roc_auc": 0.9568993968362354,
+   "bin_threshold": 0.49000000000000005
+  },
+  "test_ensemble_calibrated_sens90": {
+   "accuracy": 0.903462050599201,
+   "balanced_accuracy": 0.8098934834440721,
+   "macro_f1": 0.8311701260932798,
+   "weighted_f1": 0.8995896627190678,
+   "macro_roc_auc": 0.98187869065678,
+   "bin_accuracy": 0.855525965379494,
+   "bin_sensitivity": 0.9517241379310345,
+   "bin_specificity": 0.8325082508250825,
+   "bin_roc_auc": 0.9568993968362354,
+   "bin_threshold": 0.14
+  },
+  "test_ensemble_calibrated_lesion_avg": {
+   "accuracy": 0.9081225033288948,
+   "balanced_accuracy": 0.8330785399011729,
+   "macro_f1": 0.8510804933157552,
+   "weighted_f1": 0.90419969556348,
+   "macro_roc_auc": 0.9829723544469692,
+   "bin_accuracy": 0.9360852197070573,
+   "bin_sensitivity": 0.7689655172413793,
+   "bin_specificity": 0.9760726072607261,
+   "bin_roc_auc": 0.9587145783543871,
+   "bin_threshold": 0.49000000000000005
+  },
+  "individual_runs": [
+   {
+    "model": "convnext_small_meta_isic",
+    "val_acc": 0.8681462140992167,
+    "test_acc": 0.8754993342210386
+   },
+   {
+    "model": "tf_efficientnet_b4_meta_isic",
+    "val_acc": 0.8772845953002611,
+    "test_acc": 0.8968042609853528
+   },
+   {
+    "model": "tf_efficientnetv2_s_meta_isic",
+    "val_acc": 0.8825065274151436,
+    "test_acc": 0.888814913448735
+   }
+  ]
+ },
+ "v2/run_settings.json": {
+  "USE_UNET": true,
+  "USE_ISIC2019": true,
+  "EPOCHS": 18,
+  "trained": [
+   "tf_efficientnetv2_s.in21k_ft_in1k",
+   "tf_efficientnet_b4.ns_jft_in1k",
+   "convnext_small.fb_in22k_ft_in1k_384"
+  ],
+  "hours": 9.11
+ },
+ "v2/tf_efficientnet_b4_meta_isic/run.json": {
+  "tag": "tf_efficientnet_b4_meta_isic",
+  "arch": "tf_efficientnet_b4.ns_jft_in1k",
+  "meta": true,
+  "isic2019": true,
+  "size": 384,
+  "best_epoch": 7,
+  "minutes": 148.4
+ },
+ "v2/tf_efficientnetv2_s_meta_isic/run.json": {
+  "tag": "tf_efficientnetv2_s_meta_isic",
+  "arch": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "meta": true,
+  "isic2019": true,
+  "size": 384,
+  "best_epoch": 15,
+  "minutes": 120.4
+ },
+ "training_runs": {
+  "convnext_tiny": {
+   "run": "convnext_tiny",
+   "arch": "convnext_tiny",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 18,
+   "best_val_f1": 0.7401125020151064,
+   "train_minutes": 14.3,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "densenet121": {
+   "run": "densenet121",
+   "arch": "densenet121",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.7123029208412596,
+   "train_minutes": 10.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "efficientnet_b0": {
+   "run": "efficientnet_b0",
+   "arch": "efficientnet_b0",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.6684089517101457,
+   "train_minutes": 6.7,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "efficientnet_b0_long": {
+   "run": "efficientnet_b0_long",
+   "arch": "efficientnet_b0_long",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 16,
+   "best_val_f1": 0.6684089517101457,
+   "train_minutes": 7.7,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "gate_s0": {
+   "run": "gate_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 11,
+   "best_val_f1": 0.4383894140561193,
+   "train_minutes": 2.8,
+   "device": "cuda",
+   "n_train": 3815,
+   "smoke": false
+  },
+  "gate_s1": {
+   "run": "gate_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.4613090478184039,
+   "train_minutes": 3.8,
+   "device": "cuda",
+   "n_train": 3815,
+   "smoke": false
+  },
+  "gate_s2": {
+   "run": "gate_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 12,
+   "best_val_f1": 0.4432005865864614,
+   "train_minutes": 3.0,
+   "device": "cuda",
+   "n_train": 3815,
+   "smoke": false
+  },
+  "resnet50": {
+   "run": "resnet50",
+   "arch": "resnet50",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.6843553965539378,
+   "train_minutes": 8.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_crop_s0": {
+   "run": "study_crop_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.7039833734463034,
+   "train_minutes": 6.9,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_crop_s1": {
+   "run": "study_crop_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.7008863512260328,
+   "train_minutes": 6.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_crop_s2": {
+   "run": "study_crop_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.7305493637719128,
+   "train_minutes": 6.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_focal_s0": {
+   "run": "study_imb_focal_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.675621170937694,
+   "train_minutes": 6.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_focal_s1": {
+   "run": "study_imb_focal_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.6944019712477908,
+   "train_minutes": 6.5,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_focal_s2": {
+   "run": "study_imb_focal_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "focal",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.694667480805586,
+   "train_minutes": 6.9,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_inverse_s0": {
+   "run": "study_imb_inverse_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "inverse",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.642006748036151,
+   "train_minutes": 6.9,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_inverse_s1": {
+   "run": "study_imb_inverse_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "inverse",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.6387180963427269,
+   "train_minutes": 6.5,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_inverse_s2": {
+   "run": "study_imb_inverse_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "inverse",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.6481783283880969,
+   "train_minutes": 7.0,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_none_s0": {
+   "run": "study_imb_none_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "none",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.6878308802478607,
+   "train_minutes": 6.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_none_s1": {
+   "run": "study_imb_none_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "none",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.6905673252904302,
+   "train_minutes": 7.0,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_none_s2": {
+   "run": "study_imb_none_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "none",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.6821118798754788,
+   "train_minutes": 7.1,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sampler_s0": {
+   "run": "study_imb_sampler_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "sampler",
+   "skin_aug": false,
+   "epochs_run": 10,
+   "best_val_f1": 0.6664285325745406,
+   "train_minutes": 4.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sampler_s1": {
+   "run": "study_imb_sampler_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "sampler",
+   "skin_aug": false,
+   "epochs_run": 10,
+   "best_val_f1": 0.6711190708711424,
+   "train_minutes": 4.5,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sampler_s2": {
+   "run": "study_imb_sampler_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "sampler",
+   "skin_aug": false,
+   "epochs_run": 10,
+   "best_val_f1": 0.6800865253904427,
+   "train_minutes": 4.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sqrt_s0": {
+   "run": "study_imb_sqrt_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 14,
+   "best_val_f1": 0.6841816264511413,
+   "train_minutes": 6.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sqrt_s1": {
+   "run": "study_imb_sqrt_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 15,
+   "best_val_f1": 0.6682195613154567,
+   "train_minutes": 7.0,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_imb_sqrt_s2": {
+   "run": "study_imb_sqrt_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 10,
+   "best_val_f1": 0.6847852560469059,
+   "train_minutes": 4.6,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_skin_s0": {
+   "run": "study_skin_s0",
+   "arch": "efficientnet_b0",
+   "seed": 0,
+   "imbalance": "focal",
+   "skin_aug": true,
+   "epochs_run": 15,
+   "best_val_f1": 0.6558348838048556,
+   "train_minutes": 9.5,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_skin_s1": {
+   "run": "study_skin_s1",
+   "arch": "efficientnet_b0",
+   "seed": 1,
+   "imbalance": "focal",
+   "skin_aug": true,
+   "epochs_run": 14,
+   "best_val_f1": 0.6784975466997755,
+   "train_minutes": 8.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "study_skin_s2": {
+   "run": "study_skin_s2",
+   "arch": "efficientnet_b0",
+   "seed": 2,
+   "imbalance": "focal",
+   "skin_aug": true,
+   "epochs_run": 14,
+   "best_val_f1": 0.7026533173319178,
+   "train_minutes": 8.8,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "swin_t": {
+   "run": "swin_t",
+   "arch": "swin_t",
+   "seed": 42,
+   "imbalance": "sqrt",
+   "skin_aug": false,
+   "epochs_run": 17,
+   "best_val_f1": 0.7033735569750864,
+   "train_minutes": 15.1,
+   "device": "cuda",
+   "n_train": 6981,
+   "smoke": false
+  },
+  "unet_s0": {
+   "run": "unet_s0",
+   "best_val_dice": 0.9482660351230383
+  },
+  "unet_s1": {
+   "run": "unet_s1",
+   "best_val_dice": 0.9462449275042222
+  },
+  "unet_s2": {
+   "run": "unet_s2",
+   "best_val_dice": 0.948768982568615
+  }
+ },
+ "notebook_minutes": {
+  "01_data": 3.0,
+  "14_imbalance_study": 97.8,
+  "15_skin_tone_augmentation": 30.1,
+  "16_segmentation": 114.0,
+  "02-07_models": 64.8,
+  "08_ensemble": 0.2,
+  "09_final_comparison": 2.3,
+  "17_robustness": 29.8,
+  "18_explainability": 7.6,
+  "10_indian_data_audit": 5.1,
+  "11_indian_zero_shot": 6.6,
+  "12_stage1_gate": 10.1,
+  "13_ddi_evaluation": 0.0,
+  "19_sanity_checks": 0.1
+ }
+}

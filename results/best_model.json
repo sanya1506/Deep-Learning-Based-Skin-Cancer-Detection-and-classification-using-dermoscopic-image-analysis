@@ -1,0 +1,12 @@
+{
+  "best_model": "efficientnet_b0",
+  "display_name": "EfficientNet-B0",
+  "selection_score": 0.7576657547626802,
+  "reasoning": [
+    "- Selection score 0.7577 (rank 1 of 3).",
+    "- Macro F1 0.7206 vs ResNet50 0.6879, DenseNet121 0.6478.",
+    "- Malignant sensitivity 0.6793 / specificity 0.9233; benign-vs-malignant AUC 0.8854.",
+    "- Macro ROC-AUC 0.9279; accuracy 0.8196.",
+    "- Size 4.0 M parameters, trained in 31 min."
+  ]
+}

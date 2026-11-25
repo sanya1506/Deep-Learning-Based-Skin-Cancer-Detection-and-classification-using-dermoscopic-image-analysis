@@ -1,0 +1,11 @@
+main_class,train,val,test
+Infectious Disorders,1554,337,336
+Inflammatory Disorders,1115,234,243
+Pigmentary Disorders,592,116,123
+Skin Appendages Disorders,323,76,81
+Other skin disorders,118,22,19
+Keratanisation Disorders,48,14,10
+Neoplasms and tumors,38,6,8
+No Definite Diagnosis,27,5,5
+TOTAL images,3815,810,825
+TOTAL patients,2095,449,449

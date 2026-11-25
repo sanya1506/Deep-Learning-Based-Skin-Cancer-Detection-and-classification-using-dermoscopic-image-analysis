@@ -1,0 +1,80 @@
+{
+  "ensemble_members": {
+    "tf_efficientnet_b4_meta_isic": 0.5516,
+    "tf_efficientnetv2_s_meta_isic": 0.4484
+  },
+  "class_bias": {
+    "akiec": 0.0,
+    "bcc": -0.15,
+    "bkl": 0.0,
+    "df": 0.0,
+    "mel": -0.2,
+    "nv": 0.0,
+    "vasc": 0.8
+  },
+  "test_mean_ensemble_no_calibration": {
+    "accuracy": 0.8994673768308922,
+    "balanced_accuracy": 0.7923765649647073,
+    "macro_f1": 0.8232780707143014,
+    "weighted_f1": 0.8963342648960315,
+    "macro_roc_auc": 0.9819406897578096,
+    "bin_accuracy": 0.9300932090545939,
+    "bin_sensitivity": 0.7896551724137931,
+    "bin_specificity": 0.9636963696369637,
+    "bin_roc_auc": 0.9569022419483327,
+    "bin_threshold": 0.5
+  },
+  "test_ensemble_calibrated": {
+    "accuracy": 0.903462050599201,
+    "balanced_accuracy": 0.8098934834440721,
+    "macro_f1": 0.8311701260932798,
+    "weighted_f1": 0.8995896627190678,
+    "macro_roc_auc": 0.98187869065678,
+    "bin_accuracy": 0.9314247669773635,
+    "bin_sensitivity": 0.7655172413793103,
+    "bin_specificity": 0.9711221122112211,
+    "bin_roc_auc": 0.9568993968362354,
+    "bin_threshold": 0.49000000000000005
+  },
+  "test_ensemble_calibrated_sens90": {
+    "accuracy": 0.903462050599201,
+    "balanced_accuracy": 0.8098934834440721,
+    "macro_f1": 0.8311701260932798,
+    "weighted_f1": 0.8995896627190678,
+    "macro_roc_auc": 0.98187869065678,
+    "bin_accuracy": 0.855525965379494,
+    "bin_sensitivity": 0.9517241379310345,
+    "bin_specificity": 0.8325082508250825,
+    "bin_roc_auc": 0.9568993968362354,
+    "bin_threshold": 0.14
+  },
+  "test_ensemble_calibrated_lesion_avg": {
+    "accuracy": 0.9081225033288948,
+    "balanced_accuracy": 0.8330785399011729,
+    "macro_f1": 0.8510804933157552,
+    "weighted_f1": 0.90419969556348,
+    "macro_roc_auc": 0.9829723544469692,
+    "bin_accuracy": 0.9360852197070573,
+    "bin_sensitivity": 0.7689655172413793,
+    "bin_specificity": 0.9760726072607261,
+    "bin_roc_auc": 0.9587145783543871,
+    "bin_threshold": 0.49000000000000005
+  },
+  "individual_runs": [
+    {
+      "model": "convnext_small_meta_isic",
+      "val_acc": 0.8681462140992167,
+      "test_acc": 0.8754993342210386
+    },
+    {
+      "model": "tf_efficientnet_b4_meta_isic",
+      "val_acc": 0.8772845953002611,
+      "test_acc": 0.8968042609853528
+    },
+    {
+      "model": "tf_efficientnetv2_s_meta_isic",
+      "val_acc": 0.8825065274151436,
+      "test_acc": 0.888814913448735
+    }
+  ]
+}

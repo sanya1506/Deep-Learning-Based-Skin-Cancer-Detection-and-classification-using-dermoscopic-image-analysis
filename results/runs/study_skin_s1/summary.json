@@ -1,0 +1,13 @@
+{
+  "run": "study_skin_s1",
+  "arch": "efficientnet_b0",
+  "seed": 1,
+  "imbalance": "focal",
+  "skin_aug": true,
+  "epochs_run": 14,
+  "best_val_f1": 0.6784975466997755,
+  "train_minutes": 8.8,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

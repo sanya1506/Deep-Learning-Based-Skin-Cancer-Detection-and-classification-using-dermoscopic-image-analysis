@@ -1,0 +1,9 @@
+{
+  "model": "densenet121",
+  "epochs_run": 12,
+  "best_val_f1": 0.6624622039716564,
+  "train_minutes": 32.58304721514384,
+  "device": "mps",
+  "train_size": 6981,
+  "quick": false
+}

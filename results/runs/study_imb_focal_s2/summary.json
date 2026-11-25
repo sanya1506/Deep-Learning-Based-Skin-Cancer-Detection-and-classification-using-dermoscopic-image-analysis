@@ -1,0 +1,13 @@
+{
+  "run": "study_imb_focal_s2",
+  "arch": "efficientnet_b0",
+  "seed": 2,
+  "imbalance": "focal",
+  "skin_aug": false,
+  "epochs_run": 15,
+  "best_val_f1": 0.694667480805586,
+  "train_minutes": 6.9,
+  "device": "cuda",
+  "n_train": 6981,
+  "smoke": false
+}

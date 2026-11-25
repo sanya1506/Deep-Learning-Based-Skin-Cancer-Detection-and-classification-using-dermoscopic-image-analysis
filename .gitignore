@@ -1,0 +1,33 @@
+venv/
+.venv/
+data/raw/
+data/processed/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.zip
+.streamlit/secrets.toml
+
+# ---- added for the GitHub backup (Nov 2026) ----
+.claude/
+*.log
+!kaggle_runs/app_install.log
+# DermaCon-IN is research-use data: no per-image files or models trained on it in this public repo
+data/splits/dermacon_*.csv
+results/preds/dc_*
+models/gate_s*.pth
+# v2 member with ensemble weight 0 (not used by the app), 198 MB
+models/v2/convnext_small_meta_isic.pth
+# downloaded Kaggle outputs (copies of results/ and models/, smoke runs, HAM10000 images)
+kaggle_runs/part-*/real/
+kaggle_runs/part-*/smoke*/
+kaggle_runs/part-*/reallog/
+kaggle_runs/part-C/real_out/
+# report build drafts
+kaggle_runs/report/*.pdf
+kaggle_runs/report/pages_ab/
+kaggle_runs/report/check.docx
+kaggle_runs/report$1.pdf
+results/preds/gate_s*_test.npz
+results/preds/gate_s*_val.npz

@@ -1,0 +1,9 @@
+{
+  "tag": "tf_efficientnetv2_s_meta_isic",
+  "arch": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "meta": true,
+  "isic2019": true,
+  "size": 384,
+  "best_epoch": 15,
+  "minutes": 120.4
+}

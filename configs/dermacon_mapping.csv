@@ -1,0 +1,246 @@
+diagnosis,ham_class
+Basal Cell Carcinoma,bcc
+Seborrheic Keratosis,bkl
+Dermatofibroma,df
+Melanoma,mel
+Nevocytic nevus,nv
+Acanthosis nigricans,unmapped
+Acne,unmapped
+Acne Conglobata,unmapped
+Acne Keloidalis,unmapped
+Acne Scars,unmapped
+Acrochordon,unmapped
+Actinic Dermatitis,unmapped
+Allergic Contact Dermatitis,unmapped
+Alopecia Areata,unmapped
+Androgenic Alopecia,unmapped
+Anetoderma,unmapped
+Angioedema,unmapped
+Atopic Dermatitis,unmapped
+Balanitis,unmapped
+Becker nevus,unmapped
+Bowen's Metastasis,unmapped
+Bullous Fixed Drug Eruption,unmapped
+Bullous Pemphigoid,unmapped
+Burn of skin,unmapped
+Candidal Balanoposthitis,unmapped
+Candidal Intertrigo,unmapped
+Candidal Vulvovaginitis,unmapped
+Cellulitis,unmapped
+Cheilitis,unmapped
+Chickenpox exanthem,unmapped
+Chromoblastomycosis,unmapped
+Chronic Bullous Disease of Childhood,unmapped
+Chronic actinic dermatitis,unmapped
+Chronic eczema with secondary infection,unmapped
+Chronic plaque psoriasis,unmapped
+Congenital Disease,unmapped
+Contact Dermatitis,unmapped
+Contact Dermatitis with secondary infection,unmapped
+Contact purpura,unmapped
+Corn,unmapped
+Crusted eczematous dermatitis,unmapped
+Cutaneous Anthrax,unmapped
+Cutaneous amyloidosis,unmapped
+Cutaneous larva migrans,unmapped
+Cutaneous sarcoidosis,unmapped
+Cyst,unmapped
+Darier's disease,unmapped
+Demodicosis,unmapped
+Dermatosis Papulosa Nigra,unmapped
+Diabetic Ulcer,unmapped
+Diaper Dermatitis,unmapped
+Discoid Lupus Erythematosus,unmapped
+Disseminated Eczema,unmapped
+Drug Rash,unmapped
+Drug eruption,unmapped
+Dry Discoid Eczema,unmapped
+Dryness (xerosis),unmapped
+Ear Eczema,unmapped
+Ecchymosis,unmapped
+Ecthyma,unmapped
+Eczema,unmapped
+Eczemated Tinea,unmapped
+Epidermal nevus,unmapped
+Epidermodysplasia Verruciformis,unmapped
+Epidermolysis Bullosa,unmapped
+Epidermolysis Bullosa Simplex,unmapped
+Erythema Annulare Centrifugum,unmapped
+Erythema multiforme,unmapped
+Erythrasma,unmapped
+Facial hypermelanosis,unmapped
+Fissure Foot,unmapped
+Fixed Drug Eruption,unmapped
+Folliculitis,unmapped
+Folliculitis Decalvans,unmapped
+Foot ulcer,unmapped
+Furuncle,unmapped
+GeographicTongue,unmapped
+Granuloma annulare,unmapped
+Granuloma pyogenic,unmapped
+Guttate Psoriasis,unmapped
+Gutted Lichen Planus,unmapped
+Haemorrhoids,unmapped
+Hansen's disease,unmapped
+Herpes Labialis,unmapped
+Herpes Zoster,unmapped
+Herpes genitalis,unmapped
+Hidradenitis,unmapped
+Hyper Hydrosis,unmapped
+Hyperpigmentation disorder,unmapped
+Hypertrophic Lichen Planus,unmapped
+Hypertrophic Scar / Keloid,unmapped
+Idiopathic Guttate Hypomelanosis,unmapped
+Impetigo,unmapped
+Infected Eczema,unmapped
+Infected Keratoderma,unmapped
+Infected Nodule,unmapped
+Infected Tinea,unmapped
+Infection of toe web,unmapped
+Inflammatory Linear Verrucous Epidermal Nevus,unmapped
+Insect Bite Reaction,unmapped
+Inverse psoriasis,unmapped
+Itchy skin eruption,unmapped
+Keloid,unmapped
+Keloid Milium,unmapped
+Keratoacanthoma,unmapped
+Keratoderma,unmapped
+Keratoderma with Secondary Infection,unmapped
+Keratolysis Exfoliativa,unmapped
+Keratosis pilaris,unmapped
+Kerion,unmapped
+Kumkum Dermatitis,unmapped
+Kyrle���s Disease,unmapped
+Lichen Planus,unmapped
+Lichen Planus pigmentosus,unmapped
+Lichen Simplex Chronicus,unmapped
+Lichen nitidus,unmapped
+Lichen planopilaris,unmapped
+Lichen sclerosus,unmapped
+Lichen simplex,unmapped
+Lichen spinulosus,unmapped
+Lichen striatus,unmapped
+Lichenoid eruption,unmapped
+Linear Lichen Planus,unmapped
+Lipoma,unmapped
+Lupus vulgaris,unmapped
+Maduromycosis,unmapped
+Melasma,unmapped
+Milia,unmapped
+Miliaria,unmapped
+Molluscum Contagiosum,unmapped
+Mongolian spot,unmapped
+Morphea,unmapped
+Mucosal Ulcer or Cyst,unmapped
+Mucus Cyst,unmapped
+Mycetoma,unmapped
+Mycosis fungoides,unmapped
+Myxoid Cyst,unmapped
+Nail dystrophy,unmapped
+Necrotizing Fasciitis,unmapped
+Neurofibroma,unmapped
+Nevus Depigmentosis,unmapped
+Nevus anemicus,unmapped
+Nevus sebaceous,unmapped
+No Definite Diagnosis,unmapped
+Nodular Scabies,unmapped
+Nodular vasculitis,unmapped
+Nutritional Dermatitis,unmapped
+Ochronosis,unmapped
+Onychomycosis,unmapped
+Ophiasis,unmapped
+Oral Candidiasis,unmapped
+Paederus dermatitis,unmapped
+Palmar psoriasis,unmapped
+Palmoplantar Keratoderma,unmapped
+Paronychia,unmapped
+Pellagra dermatitis,unmapped
+Pemphigus foliaceus,unmapped
+Pemphigus vulgaris,unmapped
+Perioral dermatitis,unmapped
+Phimosis,unmapped
+Photodermatitis,unmapped
+Phrynoderma,unmapped
+Phytophotodermatitis,unmapped
+Pigmented purpuric eruption,unmapped
+Pityriasis Alba,unmapped
+Pityriasis lichenoides chronica,unmapped
+Pityriasis rosea,unmapped
+Polymorphous Light Eruption,unmapped
+Port wine stain,unmapped
+Post-Inflammatory hyperpigmentation,unmapped
+Post-Inflammatory hypopigmentation,unmapped
+Prurigo,unmapped
+Prurigo Simplex,unmapped
+Prurigo nodularis,unmapped
+Pruritic Urticarial Papules,unmapped
+Pruritic dermatitis,unmapped
+Pseudo lymphoma,unmapped
+Pseudoepitheliomatous keratotic & micaceous balanitis,unmapped
+Pseudofolliculitis barbae,unmapped
+Pseudolymphoma,unmapped
+Pseudomonas,unmapped
+Psoriasis,unmapped
+Psoriasis Vulgaris,unmapped
+Purpuric Dermatoses,unmapped
+Pustular Scabies,unmapped
+Pustular psoriasis,unmapped
+Pyoderma,unmapped
+Pyoderma gangrenosum,unmapped
+Reticulate acropigmentation of Dohi,unmapped
+Rosacea,unmapped
+SLE - Systemic lupus erythematosus-related syndrome,unmapped
+Scabies,unmapped
+Scabies Infected,unmapped
+Scar Condition,unmapped
+Scleroderma,unmapped
+Scrotal Dermatitis,unmapped
+Sebaceous Cyst,unmapped
+Seborrheic Dermatitis,unmapped
+Seborrheic Melanosis,unmapped
+Skin ulcer,unmapped
+Squamous Cell Carcinoma,unmapped
+Staphylococcal Scalded Skin Syndrome,unmapped
+Steatocystoma Multiplex,unmapped
+Steroid Induced Facies,unmapped
+Steroid Modified Tinea,unmapped
+Striae,unmapped
+Sun damaged skin,unmapped
+Sunburn,unmapped
+Sweat Dermatitis,unmapped
+Syphilis,unmapped
+Syringoma,unmapped
+Textile Dermatitis,unmapped
+Tick bite,unmapped
+Tinea,unmapped
+Tinea Capitis,unmapped
+Tinea Corporis,unmapped
+Tinea Cruris,unmapped
+Tinea Faciei,unmapped
+Tinea Infected with secondary bacterial Infection,unmapped
+Tinea Manuum,unmapped
+Tinea Versicolor,unmapped
+Tinea pedis,unmapped
+Topical Steroid Damaged Face,unmapped
+Traction alopecia,unmapped
+Trichoepithelioma,unmapped
+Trophic Ulcer,unmapped
+Truncal Acne,unmapped
+Ulcer,unmapped
+Urticaria,unmapped
+Urticarial vasculitis,unmapped
+Varicella Zoster,unmapped
+Varicose vein,unmapped
+Vasculitis,unmapped
+Verruca Vulgaris,unmapped
+Viral exanthem,unmapped
+Vitiligo,unmapped
+Wart,unmapped
+White piedra,unmapped
+Xanthelasma Palpebrarum,unmapped
+Xanthoma,unmapped
+Xerosis,unmapped
+Xerosis vulgaris,unmapped
+Zoon's Balanitis,unmapped
+Cherry Angioma,vasc
+Hemangioma,vasc
