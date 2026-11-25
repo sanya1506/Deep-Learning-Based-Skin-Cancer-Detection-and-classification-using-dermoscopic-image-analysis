@@ -153,7 +153,7 @@ DermaCon-IN has **5,450** clinical photos from Indian patients. Only **52** are 
 - **Step-by-step panel** explaining what v2 did to the image.
 - **Downloadable PDF and CSV report.**
 
-<p align="center"><img src="docs/screenshots/app_demo_1_mel.png" width="75%" alt="App screenshot"><br><sub>First version of the app (single model). <code>app_v3.py</code> adds the ensembles, v2, the two-stage gate and the explanations.</sub></p>
+<p align="center"><img src="docs/screenshots/app_v3_v2_melanoma.png" width="85%" alt="app_v3 screenshot: v2 prediction on a melanoma sample"><br><sub><code>app_v3.py</code> in v2 mode on a HAM10000 melanoma: predicted <b>Melanoma (80.9 %)</b>, malignant probability 85.0 %, with the U-Net crop, Grad-CAM, threshold explanation and step-by-step panel.</sub></p>
 
 ---
 
